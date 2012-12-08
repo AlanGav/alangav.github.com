@@ -1,0 +1,18 @@
+.demo-acordeon
+{
+	width: 300px;
+	margin: 1em 0.5em;
+
+}
+.demo-acordeon h3
+{
+	margin: 0;
+	padding: 0.25em;
+	background: silver;
+	border-top: 1px solid #386785;
+}
+
+.demo-acordeon div
+{
+	padding: .5em .25em;
+}
