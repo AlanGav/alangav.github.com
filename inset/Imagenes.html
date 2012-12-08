@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8'/>
+	<title>Sombra inset con css3</title>
+
+	<style type="text/css">
+		body{
+			background: #fff;
+		}
+		
+		#img{
+
+			width: 300px;
+			height: 200px;
+			margin: 0 auto;
+			margin-top:50px; 
+			opacity: .5;
+			border-radius: 8px;
+			background: url(naturaleza.jpg);
+			background-size: cover;
+			-webkit-transition:all .5s ease;
+		}
+
+		#img:hover{
+
+			box-shadow: inset 0px 0px 10px 15px  rgba(0,0,0,.6);
+			-webkit-transform:scale(1.2);
+			opacity: 1;
+		}
+		h1{
+			width: 400px;
+			margin: 0 auto;
+			font-family: Tahoma;
+		}
+	</style>
+</head>
+<body>
+	<h1>Sombra Inset Con Css3</h1>
+	<div id="img">
+	</div>
+</body>
+</html>
