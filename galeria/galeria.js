@@ -3,10 +3,10 @@ $(document).ready(function(){
 		var img = $(this).attr('src')
 		$('.galeria img').each(function(index){
 			if($(this).attr('src') == img){
-					$(this).animate({'opacity':'.5'},250)
+					$(this).animate({'opacity':'.5'},500)
 			}
 			else{
-				$(this).animate({'opacity':'1'},250)
+				$(this).animate({'opacity':'1'},500)
 			}
 		})
 		$('.imagen').css('opacity','0')
