@@ -5,9 +5,14 @@
 	<script type="text/javascript">
 			$(document).ready(function(){
 					$('.cargar').hide()
+					var inicial = $('a:first').attr('href')
+					$('#grande').html("<img src='"+inicial+"'/>")
 					$('a').click(function(){
-						var imagen= $(this).attr('href')
-						$('a').each(function(i){
+
+						var imagen = $(this).attr('href')
+							if(imagen!=inicial){
+								inicial = imagen
+									$('a').each(function(i){
 							if($(this).attr('href') == imagen)
 								$(this).animate({'opacity':'.75'})	
 							else
@@ -23,6 +28,11 @@
 								
 						})
 						return false;
+							}	
+						else{
+							return false;
+						}
+						
 					})
 			})
 	</script>
@@ -31,10 +41,13 @@
 </head>
 <body>
 	<h1>Galería con css y jQuery</h1>
-	<a href="uno.jpg"><img src="thumb1.jpg" alt="uno"/></a>
-	<a href="dos.jpg"><img src="thumb2.jpg" alt="dos"/></a>
-	<a href="tres.jpg"><img src="thumb3.jpg" alt="tres"/></a>
-	<a href="cuatro.jpg"><img src="thumb4.jpg" alt="cuatro"/></a>
+	<div id="thumbs">
+		<a href="uno.jpg"><img src="thumb1.jpg" alt="uno"/></a>
+		<a href="dos.jpg"><img src="thumb2.jpg" alt="dos"/></a>
+		<a href="tres.jpg"><img src="thumb3.jpg" alt="tres"/></a>
+		<a href="cuatro.jpg"><img src="thumb4.jpg" alt="cuatro"/></a>
+	</div>
+	
 	<img src="cargar.gif" class='cargar'/>
 	<div id='grande'></div>
 
