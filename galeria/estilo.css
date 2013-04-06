@@ -1,26 +1,29 @@
-body{
-	background: #212121;
+body
+{
+	background: #1C1C1C;
+	font-family: Cambria;
 	color:#fff;
-	font-family: Consolas;
-}
-h1{
 	text-align: center;
 }
-#grande{
-	width: 400px;
-	height: 400px;
+.galeria
+{
+	width: 460px;
+	height: 100px;
+}
+.galeria img{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	border: 5px solid rgba(255,255,255,0.75);
+}
+.imagen {
+	width: 300px;
+	height: 300px;
 	margin: 0 auto;
+	margin-top: 5%;
 }
-#grande img{
-	width: 400px;
-	height: 400px;
-}
-a img{
+.imagen img{
+	width: 100%;
+	height: 100%;
 	border-radius: 100%;
-	border: 5px solid #ddd;
-}
-.cargar{
-	top: 50%;
-	left: 50%;
-	position: absolute;
 }
