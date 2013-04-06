@@ -1,19 +1,42 @@
 <html>
 <head>
 	<title>Galeria</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function(){
+					$('.cargar').hide()
+					$('a').click(function(){
+						var imagen= $(this).attr('href')
+						$('a').each(function(i){
+							if($(this).attr('href') == imagen)
+								$(this).animate({'opacity':'.75'})	
+							else
+								$(this).animate({'opacity':'1'})	
+						})
+						$('#grande').html("<img src='"+$(this).attr('href')+"'/>").hide()
+						$('.cargar').fadeIn()
+						$('#grande img').load(function(){
+							$('.cargar').fadeOut(500,function(){
+									$('#grande').fadeIn(250)
+							})
+						
+								
+						})
+						return false;
+					})
+			})
+	</script>
+	<link rel="stylesheet" type="text/css" href="estilo.css"/>
 	<meta charset='utf-8'/>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="galeria.js"></script>
 </head>
 <body>
 	<h1>Galería con css y jQuery</h1>
-	<div class="galeria">
-		<img src="uno.jpg"/>
-		<img src="dos.jpg"/>
-		<img src="tres.jpg"/>
-		<img src="cuatro.jpg"/>
-	</div>	
-	<div class="imagen"></div>
+	<a href="uno.jpg"><img src="thumb1.jpg" alt="uno"/></a>
+	<a href="dos.jpg"><img src="thumb2.jpg" alt="dos"/></a>
+	<a href="tres.jpg"><img src="thumb3.jpg" alt="tres"/></a>
+	<a href="cuatro.jpg"><img src="thumb4.jpg" alt="cuatro"/></a>
+	<img src="cargar.gif" class='cargar'/>
+	<div id='grande'></div>
+
 </body>
 </html>
