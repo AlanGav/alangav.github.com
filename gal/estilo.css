@@ -1,0 +1,26 @@
+body{
+	background: #212121;
+	color:#fff;
+	font-family: Consolas;
+}
+h1{
+	text-align: center;
+}
+#grande{
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+}
+#grande img{
+	width: 400px;
+	height: 400px;
+}
+a img{
+	border-radius: 100%;
+	border: 5px solid #ddd;
+}
+.cargar{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+}
