@@ -6,9 +6,15 @@
 			$(document).ready(function(){
 					$('.cargar').hide()
 					var inicial = $('a:first').attr('href')
-					$('#grande').html("<img src='"+inicial+"'/>")
-					$('a').click(function(){
+					$('#grande').html("<img src='"+inicial+"'/>").hide()
+					$('.cargar').fadeIn()
+					$('#grande img').load(function(){
+									$('.cargar').fadeOut(250,function(){
+										$('#grande').fadeIn(250)	
+									})
+					})
 
+					$('a').click(function(){
 						var imagen = $(this).attr('href')
 							if(imagen!=inicial){
 								inicial = imagen
