@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>PROGRESSBAR CON HTML5</title>
+	<meta charset='utf-8'/>
+	<style type="text/css">
+		body{
+			background: #aaa;
+			font-family: "Tahoma";
+		}
+		h1{
+			text-align: center;
+		}
+		.contenedor{
+			width: 20%;
+			margin: 0 auto;
+		}	
+		.barraStyle{
+			border-radius: 10px;
+		}
+		.barraStyle::-webkit-progress-bar{
+			border-radius: 10px;
+			background: #fff;
+		}
+		.barraStyle::-webkit-progress-value{
+			background: blue;
+			border-radius: 10px;
+		}
+	</style>
+	<script type="text/javascript">
+			function cargar(){
+				var barra = document.getElementById('barra')
+				 barra.value +=10
+			}
+	</script>
+</head>
+<body>
+	<h1>HTML5 PROGRESSBAR</h1>
+	<div class="contenedor">
+		<progress value=0 max=100 id="barra" class="barraStyle"></progress>
+		<input type="button" value="cargar" id="cargar" onclick="setInterval('cargar()',250)"/>
+	</div>
+</body>
+</html>
