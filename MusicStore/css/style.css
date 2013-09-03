@@ -1,0 +1,346 @@
+/*General Styles*/
+body{
+	background-color: #F6F6F6;
+	font-size: 16px;
+    font-family: 'Droid Sans Mono', sans-serif;
+	margin:0;
+	padding: 0;
+}
+/*Layout*/
+#mainContainer{
+	margin:auto;
+	max-width: 1260px;
+}	
+header{	
+	font-size: 1.25em;
+	font-family: 'Holtwood One SC', serif;
+	padding: 1em;
+	
+}
+nav{
+	padding: 0.25em;
+	width: 100%;	
+}
+#content{
+	background: #ddd;
+	box-shadow: inset 0 0 8px #2B2B2B;
+	display: inline-block;
+	padding: 0.5em;
+	margin: 0.5em;
+	width: 70%;
+	
+}
+aside{
+	display: inline-block;
+	margin:0.5em;
+	vertical-align: top;
+	width: 25%;
+}
+footer{
+	background: #ddd;
+	box-shadow: inset 0 0 8px #2B2B2B;
+	margin: 0.5em 0.5em 0 0.5em;
+	padding: 1em;
+	text-align: center;
+}
+/*Header */
+header h1{
+	margin:0;
+	padding: 0.5em;
+	text-align: center;
+	
+}
+header h1:hover{
+	-webkit-animation:animation-logo 0.5s infinite;
+	-moz-animation:animation-logo 0.5s infinite;
+}
+header h1 a{
+	background:url(../images/layout/logo.png) no-repeat left;
+	background-size: 35px;
+	color:#000;
+	padding: 1em;
+	padding-left: 1.5em;
+	text-shadow:2px 2px 8px #666;
+	text-decoration: none;
+
+}
+@-webkit-keyframes animation-logo{
+	0%{-webkit-transform:rotate(0deg);}
+	25%{-webkit-transform:rotate(10deg);}
+	50%{-webkit-transform:rotate(0deg);}
+	75%{-webkit-transform:rotate(-10deg);}
+	100%{-webkit-transform:rotate(0deg);}
+}
+@-moz-keyframes animation-logo{
+	0%{-moz-transform:rotate(0deg);}
+	25%{-moz-transform:rotate(10deg);}
+	50%{-moz-transform:rotate(0deg);}
+	75%{-moz-transform:rotate(-10deg);}
+	100%{-moz-transform:rotate(0deg);}
+}
+/*Menú*/
+nav ul li {
+
+	background-color: #DE1B1B;
+	cursor:pointer;
+	display: inline-block;
+	list-style: none;
+	text-align: center;
+	padding: 0.25em;
+	width: 18%;
+	-webkit-transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+	-o-transition:all 0.3s ease-in;
+	-ms-transition:all 0.3s ease-in;
+}
+nav ul li a{
+	color:#F6F6F6;
+	text-decoration: none;
+}
+nav ul li:hover{
+	background: #2B2B2B;
+}
+
+/*logo*/
+header h1 a img{
+	width: 20px;
+}
+/*Contenido*/
+.tipo-instrumentos{
+	background: #DE1B1B;
+	color:#F6F6F6;
+	margin:0;
+	padding: 0.2em;
+	text-transform: uppercase;
+}
+.article{
+	background: #DE1B1B;
+	border:1px solid #E4EE26;
+	box-shadow: 4px 4px 8px #2B2B2B;
+	display: inline-block;
+	margin:0.5em;
+	padding: 0.3em;
+	text-align: center;
+	width: 28%;
+	-webkit-transition:all 0.3s linear;
+	-moz-transition:all 0.3s linear;
+}
+.article:hover{
+	-webkit-transform:scale(1.075);
+	-moz-transform:scale(1.075);
+}
+.article h4{
+	border-bottom: 0.2em solid #E4EE26;
+	color:#F6F6F6;
+	margin:0;
+	padding: 0.2em;
+	text-align: center;
+}
+.article img{
+	max-width: 100%;
+}
+#guitarras{
+	margin:0.5em;
+	padding: 0.5em;
+}
+.guitarra{
+	background: #DE1B1B;
+	margin: 0.5em;
+	padding: 0.5em;
+	position: relative;
+}
+.guitarra img{
+	width: 150px;
+}
+.guitarra h4{
+	background: #D0000F;
+	border-bottom: 0.175em solid #E4EE26;
+	color:#F6F6F6;
+	padding: 0.2em;
+	margin:0;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.guitarra a img{
+	border:0.2em solid #E4EE26;
+	border-radius: 8px;
+}
+.descripcion{
+	color:#F6F6F6;
+	float: right;
+	position: absolute;
+	left:180px;
+	top:40px;
+}
+.leer-mas{
+	background: #D0000F;
+	border:0.075em solid #E4EE26;
+	border-radius: 8px;
+	color:#F6F6F6;
+	left: 700px;
+	padding: 0.5em;
+	position: absolute;
+	text-decoration: none;
+	top: 165px;
+}
+.leer-mas:hover{
+	background: #DE1B1B;
+}
+.titulo-guitarra{
+	background: #D0000F;
+	color:#F6F6F6;
+	padding: 0.2em;
+	margin:0;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.detalle
+{
+	text-align: center;
+}
+.detalle img{
+	border:0.2em solid #DE1B1B;
+	border-radius: 8px;
+}
+.detalle table{
+	color:#F6F6F6;
+	margin:auto;
+	margin-top: 0.5em;
+	width: 50%;
+}
+.detalle table tr td{
+	background: #DE1B1B;
+}
+#comentarios{
+	background: #DE1B1B;
+	border-radius: 8px;
+	margin:auto;
+	margin-top: 2em;
+	padding: 0.5em;
+	width: 90%;
+}
+#comentarios h3{
+	margin:0;
+	color:#F6F6F6;
+}
+.item{
+	background: #D0000F;
+	border-radius: 8px;
+	border:0.1em solid #F6F6F6;
+	margin: 1em 0.5em 0.5em 0.5em;
+	padding: 0.5em;
+	
+}
+.item img{
+	border:0.175em solid #E4EE26;
+	border-radius: 8px;
+}
+.item h4{
+	color:#F6F6F6;
+	bottom: 50px;
+	left: 80px;
+	margin: 0;
+	position: relative;
+}
+.item p{
+	color:#F6F6F6;
+	bottom: 40px;
+	left: 80px;
+	margin: 0;
+	position: relative;
+}
+.escribe-comentario{
+
+	color:#F6F6F6;
+	margin:auto;
+	padding: 0.5em;
+	width: 40%;
+}
+.escribe-comentario input,label,textarea{
+	border:none;
+	border-radius: 8px;
+	display: block;
+	padding: 0.4em;
+}
+.escribe-comentario input,textarea{
+	background: #F6F6F6;
+}
+.escribe-comentario input[type=submit]{
+	margin-left: 60%;
+	margin-top: 5%;
+	width: 25%;
+}
+.escribe-comentario input[type=submit]:hover{
+	cursor: pointer;
+	background: #eee;
+	}
+.escribe-comentario legend{
+	font-weight: bold;
+	margin: 1em 0 1em 0;
+}
+/*Slider*/
+#slider{
+	margin:0.5em;
+}
+/*Aside*/
+.widget{
+	background: #ddd;
+	box-shadow: inset 0 0 8px #2B2B2B;
+	margin: 0 0 1em 0;
+	padding: 0.5em;
+	text-align: center;
+}
+.widget h4{
+	background: #DE1B1B;
+	color:#F6F6F6;	
+	margin:0;
+	margin-bottom: 0.5em;
+	padding: 0.2em;
+	text-transform: uppercase;
+}
+.widget a img{
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+}
+.widget a img:hover{
+	opacity: 0.75;
+}
+.widget ul li a,.widget ol li a{
+	color:#000;
+	text-decoration: none;
+	
+}
+.widget ul li a:hover,.widget ol li a:hover{
+	border-bottom: 0.175em solid #DE1B1B;
+	}
+.widget form input[type=text]{
+	background: url(../images/layout/search.png) no-repeat right,white;
+	width: 80%;
+}
+.widget form input[type=submit]{
+	background: #DE1B1B;
+	color:#F6F6F6;
+	border:none;
+	font-weight: bold;
+	padding: 0.5em;
+	width: 30%;
+}
+.widget form input[type=submit]:hover{
+	background: #D0000F;
+	cursor: pointer;
+	
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 800px){
+	nav ul li{
+		width: 100%;
+		display: block;
+	}
+	#content{
+		width: 100%;
+	}
+	aside{
+		width: 100%;
+	}
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Music Store | Home</title>
+	<link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.bxslider').bxSlider({
+				adaptiveHeight: true,
+				captions:true,
+				auto:true
+			});
+		})
+	</script>
+</head>
+<body>
+	<div id="mainContainer">
+		<header>
+			<h1><a href="index.html" title="Music Store">Music Store</a></h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="instrumentos.html">Guitarras</a></li>
+				<li><a href="instrumentos.html">Bajos</a></li>
+				<li><a href="instrumentos.html">Baterías</a></li>
+				<li><a href="instrumentos.html">Teclados</a></li>
+			</ul>
+		</nav>
+		<section id="content">
+			<h4 class="titulo-guitarra">Guitarra Gibson LesPaul Blanca</h4>
+			<div class="detalle">
+				<img src="images/thumbs/guitarra3.jpg" alt="" class="img-detalle">
+				<table>
+					<tr>
+						<td><strong>Nombre:</strong></td>
+						<td>Guitarra Gibson LesPaul Blanca</td>
+					</tr>
+					<tr>
+						<td><strong>Existencia:</strong></td>
+						<td>12</td>
+					</tr>
+					<tr>
+						<td><strong>Precio:</strong></td>
+						<td>4500 USD</td>
+					</tr>
+				</table>
+			</div>
+			<section id="comentarios">
+				<h3>Comentarios</h3>
+				<article class="item">
+					<img src="images/layout/avatar01.jpg" alt="">
+					<h4>Tatiana Juárez Pérez comento el 20/08/2013:</h4>
+					<p>Es muy buena guitarra, se las recomiendo.</p>
+				</article>
+				<article class="item">
+					<img src="images/layout/avatar02.jpg" alt="">
+					<h4>Armando López Salgado comento el 18/08/2013:</h4>
+					<p>Siempre había soñado con un instrumento así, recomendación total.</p>
+				</article>
+
+				<form action="" class="escribe-comentario">
+					<legend>Deja tu comentario:</legend>
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+					<label for="correo">Correo:</label>
+					<input type="email" id="correo" placeholder="Escribe tu correo" required>
+					<label for="comentario">Comentario:</label>
+					<textarea name="comentario" id="comentario" cols="30" rows="8"></textarea>
+					<input type="submit" value="Enviar">
+				</form>
+			</section>
+		</section>
+		<aside>
+			<div class="widget">
+				<h4>Buscar</h4>
+				<form action="">
+					<input type="text" id="search">
+					<input type="submit" value="Buscar">
+				</form>
+			</div>
+			<div class="widget">
+				<h4>Redes Sociales</h4>
+				<a href="#"><img src="images/layout/logo_facebook.jpg" alt=""></a>
+				<a href="#"><img src="images/layout/logo_google.png" alt=""></a>
+				<a href="#"><img src="images/layout/logo_twitter.jpg" alt=""></a>
+			</div>
+			<div class="widget">
+				<h4>Lo más vendido</h4>
+				<ol>
+					<li><a href="#">Guitarra Eléctrica</a></li>
+					<li><a href="#">Bajo Eléctrico</a></li>
+					<li><a href="#">Guitarra Acústica</a></li>
+				</ol>
+			</div>
+			<div class="widget">
+				<h4>Lo más nuevo</h4>
+				<ul>
+					<li><a href="#">Micrófonos</a></li>
+					<li><a href="#">Teclados</a></li>
+					<li><a href="#">Baterías</a></li>
+				</ul>
+			</div>
+		</aside>
+		<footer>
+			<span>Desarrollado por <a href="https://www.twitter.com/alan_prog">Alan García</a></span>
+		</footer>
+	</div>
+</body>
+</html>

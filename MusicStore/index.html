@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Music Store | Home</title>
+	<link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.bxslider').bxSlider({
+				adaptiveHeight: true,
+				captions:true,
+				auto:true
+			});
+		})
+	</script>
+</head>
+<body>
+	<div id="mainContainer">
+		<header>
+			<h1><a href="index.html" title="Music Store">Music Store</a></h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="instrumentos.html">Guitarras</a></li>
+				<li><a href="instrumentos.html">Bajos</a></li>
+				<li><a href="instrumentos.html">Baterías</a></li>
+				<li><a href="instrumentos.html">Teclados</a></li>
+			</ul>
+		</nav>
+		<section id="content">
+			<div id="slider">
+				<ul class="bxslider" style="margin:0px;">
+					<li><a href="detalle.html"><img src="images/slider/electrica.jpg" alt="" title="Guitarra Eléctrica"></a></li>
+					<li><a href="detalle.html"><img src="images/slider/bajo.jpg" alt="" title="Bajo Eléctrico"></a></li>
+					<li><a href="detalle.html"><img src="images/slider/bateria.jpg" alt="" title="Batería Profesional"></a></li>
+					<li><a href="detalle.html"><img src="images/slider/teclado.jpg" alt="" title="Teclado"></a></li>
+					<li><a href="detalle.html"><img src="images/slider/guitarra.jpg" alt="" title="Guitarra Acústica"></a></li>
+					<li><a href="detalle.html"><img src="images/slider/microfono.jpg" alt="" title="Micrófono"></a></li>
+				</ul>
+			</div>
+			<div id="articles">
+				<div class="article">
+					<h4>Guitarras Eléctricas</h4>
+					
+					<a href="detalle.html" title="Ver detalle"><img src="images/thumbs/electrica.png" alt=""></a>
+				</div>
+				<div class="article">
+					<h4>Bajos</h4>
+					<a href="detalle.html" title="Ver detalle"><img src="images/thumbs/bajo.png" alt=""></a>
+				</div>
+				<div class="article">
+					<h4>Baterías</h4>
+						<a href="detalle.html" title="Ver detalle"><img src="images/thumbs/bateria.png" alt=""></a>
+				</div>
+				<div class="article">
+					<h4>Teclados</h4>
+					<a href="detalle.html" title="Ver detalle"><img src="images/thumbs/teclado.png" alt=""></a>
+				</div>
+				<div class="article">
+					<h4>Guitarras Acústicas</h4>
+					<a href="detalle.html" title="Ver detalle"><img src="images/thumbs/guitarra-acustica.png" alt=""></a>
+				</div>
+				<div class="article">
+					<h4>Accesorios</h4>
+					<a href="detalle.html" title="Ver detalle"><img src="images/thumbs/microfono.png" alt=""></a>
+				</div>
+			</div>
+		</section>
+		<aside>
+			<div class="widget">
+				<h4>Buscar</h4>
+				<form action="">
+					<input type="text" id="search">
+					<input type="submit" value="Buscar">
+				</form>
+			</div>
+			<div class="widget">
+				<h4>Redes Sociales</h4>
+				<a href="#"><img src="images/layout/logo_facebook.jpg" alt=""></a>
+				<a href="#"><img src="images/layout/logo_google.png" alt=""></a>
+				<a href="#"><img src="images/layout/logo_twitter.jpg" alt=""></a>
+			</div>
+			<div class="widget">
+				<h4>Lo más vendido</h4>
+				<ol>
+					<li><a href="#">Guitarra Eléctrica</a></li>
+					<li><a href="#">Bajo Eléctrico</a></li>
+					<li><a href="#">Guitarra Acústica</a></li>
+				</ol>
+			</div>
+			<div class="widget">
+				<h4>Lo más nuevo</h4>
+				<ul>
+					<li><a href="#">Micrófonos</a></li>
+					<li><a href="#">Teclados</a></li>
+					<li><a href="#">Baterías</a></li>
+				</ul>
+			</div>
+		</aside>
+		<footer>
+			<span>Desarrollado por <a href="https://www.twitter.com/alan_prog">Alan García</a></span>
+		</footer>
+	</div>
+</body>
+</html>

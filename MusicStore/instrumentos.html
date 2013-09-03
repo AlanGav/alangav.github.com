@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Music Store | Home</title>
+	<link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.bxslider').bxSlider({
+				adaptiveHeight: true,
+				captions:true,
+				auto:true
+			});
+		})
+	</script>
+</head>
+<body>
+	<div id="mainContainer">
+		<header>
+			<h1><a href="index.html" title="Music Store">Music Store</a></h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="instrumentos.html">Guitarras</a></li>
+				<li><a href="instrumentos.html">Bajos</a></li>
+				<li><a href="instrumentos.html">Baterías</a></li>
+				<li><a href="instrumentos.html">Teclados</a></li>
+			</ul>
+		</nav>
+		<section id="content">
+			<h3 class="tipo-instrumentos">Tipo Instrumentos: Guitarras Eléctricas</h3>
+			<div id="guitarras">
+				<div class="guitarra">
+					<h4>Epiphone Stratocaster Roja</h4>
+					<a href="detalle.html"><img src="images/thumbs/guitarra1.jpg" alt=""></a>
+					<p class="descripcion"><b>Descripción: </b>Aquí la descripción del instrumento..</p>
+					<a href="detalle.html" class="leer-mas">Leer más..</a>
+				</div>
+				<div class="guitarra">
+					<h4>Ibanez S496 Negra</h4>
+					<a href="detalle.html"><img src="images/thumbs/guitarra2.jpg" alt=""></a>
+					<p class="descripcion"><b>Descripción: </b>Aquí la descripción del instrumento..</p>
+					<a href="detalle.html" class="leer-mas">Leer más..</a>
+				</div>
+				<div class="guitarra">
+					<h4>Gibson Clásica Blanca</h4>
+					<a href="detalle.html"><img src="images/thumbs/guitarra3.jpg" alt=""></a>
+					<p class="descripcion"><b>Descripción: </b>Aquí la descripción del instrumento..</p>
+					<a href="detalle.html" class="leer-mas">Leer más..</a>
+				</div>
+			</div>
+		</section>
+		<aside>
+			<div class="widget">
+				<h4>Buscar</h4>
+				<form action="">
+					<input type="text" id="search">
+					<input type="submit" value="Buscar">
+				</form>
+			</div>
+			<div class="widget">
+				<h4>Redes Sociales</h4>
+				<a href="#"><img src="images/layout/logo_facebook.jpg" alt=""></a>
+				<a href="#"><img src="images/layout/logo_google.png" alt=""></a>
+				<a href="#"><img src="images/layout/logo_twitter.jpg" alt=""></a>
+			</div>
+			<div class="widget">
+				<h4>Lo más vendido</h4>
+				<ol>
+					<li><a href="#">Guitarra Eléctrica</a></li>
+					<li><a href="#">Bajo Eléctrico</a></li>
+					<li><a href="#">Guitarra Acústica</a></li>
+				</ol>
+			</div>
+			<div class="widget">
+				<h4>Lo más nuevo</h4>
+				<ul>
+					<li><a href="#">Micrófonos</a></li>
+					<li><a href="#">Teclados</a></li>
+					<li><a href="#">Baterías</a></li>
+				</ul>
+			</div>
+		</aside>
+		<footer>
+			<span>Desarrollado por <a href="https://www.twitter.com/alan_prog">Alan García</a></span>
+		</footer>
+	</div>
+</body>
+</html>
