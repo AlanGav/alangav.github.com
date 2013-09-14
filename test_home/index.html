@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="slider/jquery.bxslider.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="slider/jquery.bxslider.css">
+	<script>
+		$(document).ready(function(){
+			$(".video").css('display','none')
+			$(".video:first").css('display','block')
+			$("video").hide();
+			$(".ver-videos").hide()
+			$(".back").hide()
+			$(".a-more").click(function(){
+				$(".ver-videos").css('min-height','0').slideToggle()
+			})
+			$(".item1").click(function(){
+				$(".ver-videos").css('display','none')
+				$(".video-img").css('display','none')
+				$("video").show()
+				$(".back").show()
+			})
+			$(".back").click(function(){
+				$(".ver-videos").show()
+				$(".video-img").show()
+				$("video").css('display','none')
+				$(".back").css('display','none')
+			})
+			$(".bxslider").bxSlider({
+
+			});
+			/*$("#siguiente").click(function(){
+				if($(".video").next().attr('class')==$(".video").attr('class')){
+					$(".video").fadeOut(0,function(){
+					$(".video").next().fadeIn(500)
+				
+					
+				})
+					}
+					else{
+						$("#siguiente").css('display','none')
+						$(".video").css('display','block')
+					}
+				
+			})
+
+				$("#atras").click(function(){
+				if($(".video").prev().attr('class')==$(".video").attr('class')){
+					$(".video").fadeOut(300,function(){
+					$(".video").prev().fadeIn(500)
+				
+					
+				})
+					}
+					else{
+						$(this).css('display','none')
+						$(".video").css('display','block')
+					}
+				
+			})*/
+		})
+	</script>
+	<style type="text/css">
+	body{
+		font-family: Tahoma;
+	}
+		.more-videos:hover{
+			background: #f90;
+		}
+		.more-videos:hover a{
+			color:#000;
+		}
+		.a-more{color:#fff;padding:10px;text-decoration:none;}
+		.ver-videos{
+			background: rgba(255,255,255,0.25);
+			min-width: 96%;
+		}
+		.item1:hover{
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="content" style="width:98%;text-align:center;padding:10px;">
+		<ul class="bxslider" style="list-style:none;">
+			  <li><img src="http://www.madeknown.com/images/opportuneFullWidth/04_opportune.jpg" /></li>
+			  <li><img src="http://www.madeknown.com/images/opportuneFullWidth/01_opportune.jpg" /></li>
+		</ul>
+		<div class="ver-videos" id ="ver" style="position:absolute;top:600px;padding:10px;min-height:500px;">
+			<div class="item1" style="position:relative;left:-400px;">
+				<img src="http://img.youtube.com/vi/zZIeUCBKwjc/0.jpg" width="250">	
+			</div>
+		</div>
+		<h1 class="back" style="position:relative;top:900px;"><a href="">Volver</a></h1>
+		<video width="1080" controls>
+
+					<source src="http://www.w3schools.com/html/movie.mp4" type="video/mp4" id="tipo1">
+					<source src="http://www.w3schools.com/html/movie.ogg" type="video/ogg" id="tipo2">
+					Your browser does not support the video tag.
+		</video>			
+		<div class="video-img" style="width:100%;background:#000;text-align:center;">
+			<img src="http://img.youtube.com/vi/zZIeUCBKwjc/0.jpg" style="width:80%;">
+
+	
+		</div>
+		<span style="border:1px solid #fff;position:relative;bottom:50px;padding:10px;" class="more-videos">
+			<a href="#ver"  class="a-more">More</a>
+		</span>
+	</div>
+	
+
+	<!--<div class="video-img" style="min-height:200px;background:blue;"></div>
+	<span id="siguiente">Siguiente</span>
+	<span id="atras">Atrás</span>-->
+</body>
+</html>
