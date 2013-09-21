@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Datepicker JQuery UI</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#datepicker").datepicker();
+
+		$("#datepicker").change(function(){
+			var dayNames = $("#datepicker").datepicker("getDate");
+			este_dia = dayNames.getDay()
+
+			if(este_dia==0 || este_dia==6)
+			{
+				$(this).val("")
+			}
+
+		})
+	})
+		
+	</script>
+</head>
+<body>
+	<h1>Datepicker</h1>
+	<input type="text" id="datepicker">
+</body>
+</html>
