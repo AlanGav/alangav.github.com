@@ -1,0 +1,615 @@
+/* -------- Generales ------- */
+body
+{
+	background: #000;
+	font-family: 'Offside', Helvetica;
+	font-size: 100%; /*16px;*/
+	margin: 0;
+}
+
+a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+img, embed, object, video, iframe
+{
+	max-width: 100%;
+}
+
+/* -------- /Generales ------- */
+
+
+/* -------- Estructura ------- */
+#container
+{
+	margin: 0 auto;
+	/*width: 90%; /* width: 960px;*/
+	max-width:1280px;
+}
+
+header
+{
+	background: #fff;
+	background: url(../images/banner.png) right bottom no-repeat, url(../images/back_header.png);
+	color: #000;
+	padding: 1em;
+	width: 96.66%; /*width: 928px;   928/960 */
+}
+
+footer
+{
+	background: #084B8A;
+	box-shadow: inset 0 0 10px #fff;
+	color: #fff;
+	border-radius: 0.5em 0.5em 3em 3em;
+	font-size: 0.8em;
+	margin-top: 1em;
+	padding: 0.5em;
+	width: 98.33%; /*width: 944px;   944/960 */
+}
+nav
+{
+	background: #084B8A;
+	border-radius: 3em 3em 0.5em 0.5em;
+	box-shadow: inset 0 0 10px #fff;
+}
+
+#content
+{
+	background: #fff;
+	border-radius: 1em;
+	box-shadow: inset 0 0 10px #000;
+	display: inline-block;
+	padding: 1em;
+	vertical-align: top;
+	width: 65%;
+}
+
+aside
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+}
+/* -------- /Estructura ------- */
+
+/* -------- header ------- */
+header h1
+{
+	font-family: 'Sonsie One', Helvetica;
+	font-size: 1.7em;
+}
+
+header h1 a
+{
+	background: url(../images/logo.png) no-repeat;
+	color: #084B8A;
+	display: block;
+	font-size: 1.7em;
+	height: 95px;
+	padding-left: 90px;
+	text-shadow: 3px 3px 5px #777;
+	width: 32.32%;  /* 300/928 */
+}
+/* -------- /header ------- */
+
+/* -------- Menu ------- */
+nav ul
+{
+	list-style: none;
+	padding: 1em;
+	padding-left:3em;
+}
+
+nav ul li
+{
+	display: inline-block;
+	#display: inline; /* hack ie7 */
+    _display: inline; /* hack ie6 */
+    zoom: 1; /* solo ie lo entiende */
+
+}
+
+nav ul li a
+{
+	background: #fff;
+	border-radius: 0.2em;
+	display: block;
+	color: #084B8A;
+	padding: 0.3em;
+	text-shadow: 1px 1px 2px #444;
+}
+
+nav ul li a:hover
+{
+	background: #0174DF;
+	color: #fff;
+}
+
+a.active
+{
+	background: #0174DF;
+	color: #fff;
+}
+
+#link_menu
+{
+	display: none;
+}
+
+/* -------- /Menu ------- */
+
+/* -------- Widgets ------- */
+.widget
+{
+	background: #fff;
+	border-radius: 0.5em;
+	box-shadow: inset 0 0 10px #000;
+	margin: 0 0 1em 0.5em;
+	padding: 0.2em;
+	width: 100%;
+}
+
+.widget h3
+{
+	background: #084B8A;
+	border-radius: 0.2em;
+	color: #fff;
+	font-size: 1em;
+	margin: 0.2em;
+	padding: 0.2em;
+	padding-left: 1.5em;
+}
+
+.widget_list
+{
+	color: steelblue;
+	font-size: 0.9em;
+}
+
+.widget_list a:hover
+{
+	text-decoration: underline;
+}
+
+.widget form
+{
+	margin: 1em auto;
+	padding: 0.5em;
+}
+
+.widget input[type=text]
+{
+	background: url(../images/search.png) right center no-repeat;
+	border: 1px solid #d0d0d0;
+	border-radius: 0.3em;
+	margin: 0.3em;
+	width: 90%;
+}
+
+.widget input[type=submit]
+{
+	
+}
+
+.redes_list
+{
+	list-style: none;
+}
+
+.redes_list	li
+{
+	display: inline-block;
+	#display: inline; /* hack ie7 */
+    _display: inline; /* hack ie6 */
+    zoom: 1; /* solo ie lo entiende */
+}
+
+/* -------- /Widgets ------- */
+
+/* -------- Content Index ------- */
+#peliculas
+{
+	background: #f0f0f0;
+	border-radius: 1em;
+	margin: 1em;
+	padding: 1em;
+}
+
+.pelicula
+{
+	background: #fff;
+	border-radius: 0.3em;
+	box-shadow: 0 0 5px #084B8A;
+	display: inline-block;
+	#display: inline; /* hack ie7 */
+    _display: inline; /* hack ie6 */
+    zoom: 1; /* solo ie lo entiende */
+	margin: 0.5em;
+	text-align: center;
+	width: 28%;
+}
+
+.pelicula h3
+{
+	background: #0174DF;
+	border-radius: 0.3em;
+	color: #fff;
+	font-size: 0.9em;
+	margin: 0.2em;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#mensaje
+{
+	background: #9FF781;
+	border-radius: 1em;
+	border: 3px solid #c0c0c0;
+	box-shadow: 3px 3px 5px #000;
+	font-size: 1em;
+	left: 10%;
+	position: absolute;
+	top: 20%;
+	width: 80%;
+	z-index: 999;
+}
+
+#mensaje h3
+{
+	background: #f0f0f0;
+	border-radius: 1em;
+	margin: 1em;
+	text-align: center;
+	width: 80%;
+}
+
+#mensaje p
+{
+	margin: 1em;
+	max-height: 300px;
+	overflow: auto;
+	padding: 0.5em;
+}
+
+#cerrar_mensaje
+{
+	background: #f00;
+	border-radius: 5em;
+	box-shadow: 0 0 2px #777;
+	color: #fff;
+	cursor: pointer;
+	margin: 0 !important;
+	padding: 0.5em !important;
+	position: absolute;
+	right: 0.5em;
+	top: 0.5em;
+}
+
+/* -------- /Content Index ------- */
+
+/* -------- Content Detalle ------- */
+#video_pelicula h2, #lista_peliculas h2
+{
+	border-bottom: 1px dotted #c0c0c0;
+	margin: 0 0 0.5em 0;
+	text-shadow: 1px 1px 3px #777;
+	text-transform: uppercase;
+}
+
+#descripcion_pelicula table
+{
+	background: #f0f0f0;
+	border-radius:0.5em;
+	box-shadow: 1px 1px 5px #777;
+	font-size: 0.9em;
+	padding: 0.5em;
+	width:100%;
+}
+
+#descripcion_pelicula table tr td
+{
+	border: 1px solid #fff;
+	padding: 0.2em;
+}
+
+#descripcion_pelicula table tr td:first-child
+{
+	text-align:right;
+}
+
+#comentarios
+{
+	background: #f0f0f0;
+	border-radius: 1em;
+	margin: 1em;
+	padding: 1em;
+}
+
+.comentario
+{
+	background: #fff;
+	box-shadow: 0 0  3px #777;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+}
+
+.comentario img
+{
+	float: left;
+	margin: 0.5em;
+}
+
+.comentario h3
+{
+	font-weight: bold;
+	border-bottom: 1px dotted #c0c0c0;
+}
+
+#form_comentario
+{
+	display: inline-block;
+	margin: 0 auto;
+	width: 80%;
+}
+
+#form_comentario ul
+{
+	list-style: none;
+}
+
+#form_comentario ul li
+{
+	margin-bottom: 0.5em;
+}
+
+#form_comentario input, #form_comentario textarea
+{
+	border: 1px solid #c0c0c0;
+	border-radius: 0.3em;
+	padding: 0.5em;
+	max-width: 95%;
+}
+
+
+/* -------- /Content Detalle ------- */
+
+
+/* -------- Content Categoría ------- */
+.item_lista
+{
+	border: 1px solid #c0c0c0;
+	margin-bottom: 0.5em;
+	position: relative;
+}
+
+.item_lista h3
+{
+	background: #f0f0f0;
+	margin: 0;
+	padding: 0.3em;
+	text-align: center;
+}
+
+.item_lista p
+{
+	display: inline-block;
+	#display: inline; /* hack ie7 */
+    _display: inline; /* hack ie6 */
+    zoom: 1; /* solo ie lo entiende */
+	vertical-align: top;
+}
+
+.item_lista img
+{
+	border: 3px solid #084B8A;
+	margin: 0.5em;
+	padding: 0.2em;
+}
+
+.btn_leer_mas
+{
+	bottom: 0.5em;
+	margin: 0.5em;
+	position: absolute;
+	right: 0.5em;
+}
+
+/* -------- /Content Categoría ------- */
+
+
+/*---------- Varias -------------------*/
+.boton1
+{
+	background: #a0a0a0;
+	border-radius: 0.5em;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	padding: 0.3em;
+	text-align: center;
+	text-shadow: 0 0 3px #000;
+	width: 100px;
+}
+
+.boton1:hover
+{
+	background: #c0c0c0;
+}
+/*---------- Varias -------------------*/
+
+
+
+/*-------- MEDIA QUERIES -------------*/
+@media screen and (max-width: 980px)
+{
+
+}
+
+
+@media screen and (max-width: 700px)
+{
+	#container
+	{
+
+		width: 95%;
+	}
+
+	header h1 a
+	{
+		background: none;
+		padding: 0;
+	}
+
+	#content
+	{
+		display: block;
+		width: 96%;
+	}
+
+	aside
+	{
+		display: block;
+		width: 100%;
+	}
+
+	.pelicula
+	{
+		width: 45%;
+	}
+
+	.widget
+	{
+		display: inline-block;
+		margin-top: 1em;
+		min-height: 150px;
+		text-align: center;
+		vertical-align: top;
+		width: 45%;
+	}
+
+	.btn_leer_mas
+	{
+		position: relative;
+	}
+
+	.item_lista
+	{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 480px)
+{
+	#container
+	{
+
+		width: 90%;
+	}
+
+	header
+	{
+		background: #fff;
+		border-radius: 1em;
+		box-shadow: inset 0 0 10px #000;
+		font-size: 0.8em;
+		height: 70px;
+		padding: 0.2em;
+	}
+
+	header h1 a
+	{
+		background: none;
+		padding: 0;
+	}
+
+	#content, aside
+	{
+		display: block;
+		margin: 0 auto;
+		width: 97%;
+	}
+
+	.pelicula
+	{
+		width: 100%;
+	}
+
+	.widget
+	{
+		display: block;
+		width: 100%;
+	}
+
+	
+	/*----- Menú responsive -------*/
+
+	header
+	{
+		width: 100%;
+	}
+
+	#link_menu
+	{
+		background: #fff url(../images/icon-menu.png) no-repeat 0.5em 0.5em;
+		border: solid 1px #aaa;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+		color: #084B8A;
+		display: block;
+		font-weight: bold;
+		left: 4em;
+		padding: 0.5em 0.5em 0.2em 2em;
+		position: absolute;
+		top: 0.5em;
+		width: 150px;
+	}
+
+	nav
+	{
+		background: none;
+		box-shadow: none;
+		position: relative;
+		min-height: 50px;
+		z-index: 100;
+	}
+
+	nav ul
+	{
+		background: rgba(255,255,255,0.7);
+		border: solid 1px #aaa;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+		display: none;
+		left: 4em;
+		padding: 5px 0;
+		position: absolute;
+		top: 2em;
+		width: 180px;
+	}
+
+	nav ul li
+	{
+		display: block;
+	}
+
+	nav ul li a
+	{
+		background: rgba(255,255,255,0.7);
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+
+	nav ul li.active a
+	{
+		background: #e0e0e0 url(../images/icon-check.png) no-repeat 10px 7px;
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+
+
+

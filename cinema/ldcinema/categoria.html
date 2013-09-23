@@ -1,0 +1,131 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>LdCinema - Locos por el cine</title>
+	<link rel="stylesheet" href="css/normalize.css">
+  	<link rel="stylesheet" href="slider/responsiveslides.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1 id="logo"><a href="index.html">LdCinema</a></h1>
+		</header>
+		<nav id="menu_principal">
+			<a href="#" id="link_menu">Menú</a>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="categoria.html">Acción</a></li>
+				<li><a href="categoria.html">Comedia</a></li>
+				<li><a href="categoria.html">Drama</a></li>
+				<li class="active"><a href="categoria.html">Infantiles</a></li>
+				<li><a href="categoria.html">Terror</a></li>
+			</ul>
+		</nav>
+		<section id="content">
+			<!-- peliculas -->
+			<div id="lista_peliculas">
+				<h2>Categoría: Infantiles</h2>
+				<div class="item_lista">
+					<h3>Turbo</h3>
+					<a href="detalle.html" title="Turbo">
+						<img src="images/thumbs/turbo.jpg" alt="Turbo">
+					</a>
+					<p><strong>Descripción: </strong>Aquí va la descripción de la pelicula...</p>
+					<a href="detalle.html" class="boton1 btn_leer_mas">Leer más</a>
+				</div>
+				<div class="item_lista">
+					<h3>Los pitufos 2</h3>
+					<a href="detalle.html" title="Los pitufos 2">
+						<img src="images/thumbs/pitufos2a.jpg" alt="Los pitufos 2">
+					</a>
+					<p><strong>Descripción: </strong>Aquí va la descripción de la pelicula...</p>
+					<a href="detalle.html" class="boton1 btn_leer_mas">Leer más</a>
+				</div>
+				<div class="item_lista">
+					<h3>Mi villano favorito 2</h3>
+					<a href="detalle.html" title="Mi villano favorito 2">
+						<img src="images/thumbs/villano_favorito2.jpg" alt="Mi villano favorito 2">
+					</a>
+					<p><strong>Descripción: </strong>Aquí va la descripción de la pelicula...</p>
+					<a href="detalle.html" class="boton1 btn_leer_mas">Leer más</a>
+				</div>
+				<div class="item_lista">
+					<h3>Monsters University</h3>
+					<a href="detalle.html" title="Monster University">
+						<img src="images/thumbs/mosters_university.jpg" alt="Monster University">
+					</a>
+					<p><strong>Descripción: </strong>Aquí va la descripción de la pelicula...</p>
+					<a href="detalle.html" class="boton1 btn_leer_mas">Leer más</a>
+				</div>
+			</div>
+		    <!-- /peliculas -->
+		</section>
+		<aside id="sidebar">
+			<div class="widget">
+				<h3>BUSCAR</h3>
+				<form method="post" action="#">
+					<input type="text" name="dato" />
+					<input type="submit" value="Buscar" class="boton1" />
+				</form>
+			</div>
+			<div class="widget">
+				<h3>SIGUENOS</h3>
+				<ul class="redes_list">
+					<li>
+						<a href="https://www.facebook.com/pages/linkdesignscom/377798688955952?ref=hl" 
+						target="_blank" title="Siguenos en Facebook">
+							<img src="images/logo_facebook.jpg" alt="Logo Facebook" />
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/linkdesignscom" target="_blank" title="Siguenos en Twitter">
+							<img src="images/logo_twitter.jpg" alt="Logo Twitter" />
+						</a>
+					</li>
+					<li>
+						<a href="https://plus.google.com/109755224277723621714/videos" target="_blank" title="Siguenos en G+">
+							<img src="images/logo_google.png" alt="Logo G+" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="widget">
+				<h3>TOP 5</h3>
+				<ol class="widget_list">
+					<li><a href="#">El caballero de la noche</a></li>
+					<li><a href="#">La ley de Herodes</a></li>
+					<li><a href="#">La vida es bella</a></li>
+					<li><a href="#">Los vengadores</a></li>
+					<li><a href="#">Los extraños</a></li>
+				</ol>
+			</div>
+			<div class="widget">
+				<h3>ESTRENOS</h3>
+				<ul class="widget_list">
+					<li><a href="#">Mi villano favorito 2</a></li>
+					<li><a href="#">Monsters University</a></li>
+					<li><a href="#">Después de la Tierra</a></li>
+				</ul>
+			</div>
+		</aside>
+		<footer>
+			<p>Las imágenes y nombres aqui utilizados son solo con fines didácticos, los derechos de cada una de las imágenes, 
+			simbolos o logos pertenecen a sus respectivos creadores, productores o dueños intelectuales.</p>
+			<p align="right">Desarrollado por:<a href="http://linkdesigns.com" target="_blank"> LinkDesigns.com</p>
+		</footer>
+	</div>
+	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="slider/responsiveslides.min.js"></script>
+	<script src="js/funciones.js"></script>
+</body>
+</html>

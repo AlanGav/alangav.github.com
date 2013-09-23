@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Cinema</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsiveslides.css">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	  <script>
+    // You can also use "$(window).load(function() {"
+   /* $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 800
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        maxwidth: 540
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        manualControls: '#slider3-pager',
+        maxwidth: 540
+      });
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });*/
+  </script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1><a href="index.html">Cinema</a></h1>
+		</header>
+			<nav>
+				<a href="#" id="link_menu">Menú</a>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="categoria.html">Acción</a></li>
+						<li><a href="categoria.html">Comedia</a></li>
+						<li><a href="categoria.html">Drama</a></li>
+						<li><a href="categoria.html">Infantiles</a></li>
+						<li><a href="categoria.html">Terror</a></li>
+					</ul>
+				</nav>
+		<div id="content">
+			<div id="slider">
+				<ul class="rslides" id="slider1">
+			      <li><img src="images/slider/despues_tierra.jpg" alt=""></li>
+			      <li><img src="images/slider/pitufos2.jpg" alt=""></li>
+			      <li><img src="images/slider/titanes_pacifico.jpg" alt=""></li>
+    			</ul>
+				<!--<img src="images/slider/titanes_pacifico.jpg" alt="">-->
+			</div>
+			<div id="peliculas">
+				<div class="pelicula">
+					<h3>Título</h3>	
+					<a href="#">
+						<img src="images/thumbs/superman.jpg" alt="">
+					</a>
+				</div>
+				<div class="pelicula">
+					<h3>Título</h3>	
+					<a href="#">
+						<img src="images/thumbs/ironman3.jpg" alt="">
+					</a>
+				</div>
+				<div class="pelicula">
+					<h3>Título</h3>	
+					<a href="#">
+						<img src="images/thumbs/wolverine.jpg" alt="">
+					</a>
+				</div>
+				<div class="pelicula">
+					<h3>Título</h3>	
+					<a href="#">
+						<img src="images/thumbs/los_miserables.jpg" alt="">
+					</a>
+				</div>
+				<div class="pelicula">
+					<h3>Título</h3>	
+					<a href="#">
+						<img src="images/thumbs/pitufos2a.jpg" alt="">
+					</a>
+				</div>
+				<div class="pelicula">
+					<h3>Título</h3>	
+					<a href="#">
+						<img src="images/thumbs/mosters_university.jpg" alt="">
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<aside>
+					<div class="widget">
+						<h3>Buscar</h3>						
+						<form action="">
+							<input type="text" placeholder="Buscar.." id="buscar">
+							<input type="submit" value="Buscar">
+						</form>
+					</div>
+					<div class="widget" id="redes">
+						<h3>Síguenos</h3>
+						<ul>
+							<li><a href=""><img src="images/logo_facebook.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/logo_google.png" alt=""></a></li>
+							<li><a href=""><img src="images/logo_twitter.jpg" alt=""></a></li>
+						</ul>
+					</div>
+					<div class="widget">
+						
+						<h3>TOP 5</h3>
+						<ol>
+							<li><a href="">El caballero de la noche</a></li>
+							<li><a href="">La ley de Herodes</a></li>
+							<li><a href="">La vida es bella</a></li>
+							<li><a href="">Los vengadores</a></li>
+							<li><a href="">Los extraños</a></li>
+						</ol>
+					</div>
+					<div class="widget">
+						<h3>Estrenos</h3>
+						<ul>
+							<li>Mi villano favorito 2</li>
+							<li>Monsters University</li>
+							<li>Después de la Tierra</li>
+						</ul>
+					</div>
+
+		</aside>
+		<footer>
+				<p>
+					<small>Desarrollado por : <a href="https://www.twitter.com/alan_prog">Alan García</a></small>
+				</p>
+		</footer>
+	</div>
+</body>
+</html>
