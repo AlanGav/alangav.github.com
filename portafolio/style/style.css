@@ -1,0 +1,181 @@
+*{	margin:0;
+	padding: 0;
+}
+body{
+			font-size: 16px;
+			font-family:'Happy Monkey', cursive;
+			background: #f0f0f0;
+}
+header a{
+	text-decoration: none;
+	color:#000;
+}
+.home{
+	background: #33abcb;
+	width: 15%;
+	text-align: center;
+	margin: auto;
+	padding: 0.5em;
+	box-shadow:  0em 0em 1.25em 0.1em #000;
+	
+	cursor: pointer;
+	-webkit-transition:all 0.25s ease;
+	-moz-transition:all 0.25s ease;
+	-o-transition:all 0.25s ease;
+}
+.home:hover{
+	background: #000;
+	color:#33abcb;
+	box-shadow:  0em 0em 1.25em 0.2em #000;
+}
+.home small{
+	font-weight: bold;
+}
+
+#slider{
+	width: 80%;
+	margin: auto;
+}
+#content{
+	width: 80%;	
+	margin: auto;
+	
+}
+#mainContent nav{
+	width: 80%;
+	margin:auto;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+#mainContent nav ul li{
+	display: inline-block;
+	width:23%;
+	background: #33abcb;
+	padding: 0.25em;
+	text-align: center;
+	font-size: 1.25em;
+	margin-right: .25em;
+	margin-left: .25em;
+	text-transform: uppercase;
+	font-size: 1.05em;
+	font-weight: bold;
+	-webkit-transition:all 0.25s linear;
+	-moz-transition:all 0.25s linear;
+	-o-transition:all 0.25s linear;
+}
+#mainContent nav ul li:hover{
+	background: #000;
+}
+#mainContent nav ul li:hover a{
+	color:#33abcb;
+}
+#mainContent nav ul li a{
+	color:#000;
+	text-decoration: none;
+}
+.description
+{
+	background: #33abcb;
+	padding: 0.5em;
+	display: inline-block;
+	width: 68%;
+	
+}
+.description h2{
+	
+	border-bottom:0.175em solid #f0f0f0;
+	text-transform: uppercase;
+}
+.description p{
+	margin-top: 0.5em;
+	font-size: 1.25em;
+	word-wrap:break-word;
+}
+#miFoto{
+	width: 50%;
+	float: left;
+	margin: 0.5em;
+
+}
+.portafolio{
+	width: 45%;
+	display: inline-block;
+	margin:0.5em;
+	padding: 0.25em;
+	background: #ccc;
+	vertical-align: top;
+}
+.portafolio h3
+{
+	border-bottom:0.175em solid #f0f0f0;
+	padding: 0.25em;
+	margin-bottom: 0.25em;
+}
+.portafolio img{
+	width: 100%;
+	margin-top: 0.25em;
+}
+aside{
+	background: #33abcb;
+	width: 26%;
+	display: inline-block;
+	padding: 0.5em;
+	vertical-align: top;
+
+}
+aside h3{
+	border-bottom:0.25em solid #f0f0f0;
+	padding: 0.25em;
+	text-transform: uppercase;
+}
+.widget-social img{
+	margin: 0.75em;
+	-webkit-transition:all .25s linear;
+	-moz-transition:all .25s linear;
+	-o-transition:all .25s linear;
+}
+.widget-social img:hover{
+	opacity: 0.75;
+
+}
+.description form label,input,textarea{
+	display: block;
+	margin-left: 18%;
+	resize:none;
+	padding: 0.25em;
+	width: 65%;
+}
+.description input:focus,textarea:focus{
+	background: #000;
+	color:#ccc;
+}
+.description input[type=submit]{
+width: 70%;
+border:none;
+background: #33abcb;
+color:#000;
+font-weight: bold;
+margin-top: 5%;
+}
+.description input[type=submit]:hover{
+	color:#ccc;
+}
+.description form{
+	background: #ccc;
+	width: 40%;
+	margin:auto;
+	padding: 0.5em;
+	margin-top: 5%;
+}
+footer{
+	width: 80%;
+	margin:auto;
+	text-align: center;
+	padding: 0.5em;
+	background: #33abcb;
+	margin-top: 5%;
+}
+footer p{
+	text-align: center;
+	font-size: 1.25em;
+}

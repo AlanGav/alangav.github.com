@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Alan García | Home </title>
+
+	<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style/style.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<link rel="stylesheet" href="style/jquery.bxslider.css">
+	<script>
+		$(document).ready(function(){
+			$('.bxslider').bxSlider({
+				captions:true,
+				auto: true
+			});
+		})
+	</script>	
+	
+</head>
+<body>
+	<div id="mainContent">
+		<header>
+			<a href="index.html">
+				<div class="home">
+					<h1>Alan García</h1>
+					<small> - Web Developer - </small>
+				</div>
+			</a>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">Sobre mí</a> </li>
+				<li><a href="portafolio.html">Portafolio</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<section id="content">
+			<div id="slider">
+				<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 300px;">
+					<ul class="bxslider" style="width:100%; position: relative; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-1460px, 0, 0);">
+						<li style="float: left; list-style: none; position: relative; width: 730px;"><img src="images/java-slider.png" alt="" width="100%" title="Java" height=250></li>
+						<li style="float: left; list-style: none; position: relative; width: 730px;"><img src="images/css-slider.jpg" alt="" width="100%" title="CSS" height=250></li>
+						<li style="float: left; list-style: none; position: relative; width: 730px;"><img src="images/jquery-slider.gif" alt="" width="100%" title="JQuery" height=250></li>
+						<li style="float: left; list-style: none; position: relative; width: 730px;"><img src="images/csharp-slider.jpg" alt="" width="100%" title="CSharp" height=250></li>
+					</ul>
+				</div>
+		
+			</div>
+			<article class="description">
+				<h2>Hola!</h2>	
+					<p>
+						Les doy la bienvenida  a mi portafolio, rápidamente me presento soy Alan García practico el desarrollo web así como otros lenguajes de programación y soy mexicano.<br/>
+						En esta página podrán encontrar algunos de mis proyectos así como tener contacto conmigo.
+					</p>
+			</article>
+			<aside>
+				<div class="widget-social">
+					<h3>Redes Sociales</h3>
+					<a href="https://www.facebook.com/soloprog" target="_blank">	<img src="images/logo_facebook.jpg" alt="" title="Like en FB">
+						</a>
+					<a href="https://plus.google.com/u/0/109506533259044803944/posts" target="_blank"><img src="images/logo_google.png" alt="" title="Contactamé Google+"></a>
+					<a href="https://twitter.com/alan_prog" target="_blank"><img src="images/logo_twitter.jpg" alt="" title="Sígueme en twitter"></a>
+				</div>
+			</aside>
+		</section>
+		
+		<footer>
+			<p>&copy;2013 Todos los derechos reservados.
+				</p>
+		</footer>
+	</div>
+</body>
+</html>
