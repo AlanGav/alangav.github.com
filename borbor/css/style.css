@@ -8,7 +8,7 @@
 }
 /*eleccion de idioma*/
 body{
-	background: url('../img/b3.jpg');
+	background: url('../img/b3.jpg') no-repeat;
 	font-family: 'Cubos';
 }
 #wrapper{
