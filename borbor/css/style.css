@@ -1,11 +1,15 @@
 *{
 	margin:0;
 	padding: 0;
+}
+@font-face{
 	font-family: 'Cubos';
+	src:url('Cubos.ttf');
 }
 /*eleccion de idioma*/
 body{
 	background: url('../img/b3.jpg');
+	font-family: 'Cubos';
 }
 #wrapper{
 	width: 960px;
