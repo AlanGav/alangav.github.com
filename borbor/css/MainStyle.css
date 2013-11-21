@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: 'Cubos';
+	src:url('Cubos.ttf');
+}
+body{
+	background: #000;
+	font-family: 'Candara';
+	font-size: 16px;
+}
+#wrapper{
+	margin: auto;
+	margin-top: 3%;
+	width: 960px;
+}
+.header{
+	color:#fff;
+	display: inline-block;
+	margin-bottom: 2%;
+	width: 30%;
+}
+.header a{
+	color:#ddd;
+	text-decoration: none;
+}
+#direccion{
+	color:#ddd;
+	text-align: left;
+	padding-right: 2.5em;
+}
+#logo{
+	text-align: center;
+	border-left: 2px solid #333;
+	border-right: 2px solid #333;
+}
+#bk{
+font-family: 'Cubos';
+font-weight: bold;
+font-size: 80px;
+text-shadow:2px 0px 2px #000;
+}
+#arquitectos{
+	font-family: 'Cubos';
+}
+#social{
+	margin-top: 2em;
+	text-align: center;
+	vertical-align: top;
+}
+#social a{
+	margin-right: 1em;
+}
+nav ul{
+	list-style:none;
+	}
+nav ul li a{
+	color:#ddd;
+	font-family:'Cubos';
+text-decoration:none;	
+	}
+nav ul li{
+	display:inline-block;
+	font-size:20px;
+	text-align:center;
+	width:19%;
+	
+	}
+.linea{
+	border-right:2px solid #333;
+	}

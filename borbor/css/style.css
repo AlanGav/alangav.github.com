@@ -8,8 +8,11 @@
 }
 /*eleccion de idioma*/
 body{
-	background: url('../img/b3.jpg') no-repeat;
+	background: url('../img/b3.jpg');
+	background-size: cover;
+	background-attachment: fixed;
 	font-family: 'Cubos';
+	font-size: 16px;
 }
 #wrapper{
 	width: 960px;
@@ -19,6 +22,9 @@ body{
 #content{
 	margin:auto;
 	text-align: center;
+	border-left: 2px solid #aaa;
+	border-right: 2px solid #aaa;
+
 }
 #progressbar{
 	width: 200px;
