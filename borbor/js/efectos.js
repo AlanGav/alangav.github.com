@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	
+
+
 	$("#progressbar").css('opacity','0')
 	$("#porcentaje").css('opacity','0')
 	$("#spanish").click(function(){
@@ -47,4 +50,7 @@ $(document).ready(function(){
 		},250)
 		
 	})
+	
+	
+	
 })
