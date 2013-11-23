@@ -90,6 +90,8 @@ footer span{
 #nosotros_flotante{
 	color: #fff;
 	background: -webkit-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.1));
+	background: -moz-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.1));
+	background: -ms-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.1));
 	height: 100px;
 	width: 100px;
 	margin-top: 20px;
