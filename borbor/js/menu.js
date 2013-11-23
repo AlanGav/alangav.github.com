@@ -1,5 +1,5 @@
 $(document).ready(function(){
-			ancho = $("nav ul li").width()-50
+			ancho = $("nav ul li:first").width()-50
 	$("nav ul").append("<div id=efecto></div>")
 	$("#efecto").css({
 		height:'2px',
