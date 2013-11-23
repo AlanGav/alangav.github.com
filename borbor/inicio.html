@@ -10,7 +10,8 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
   	$('.bxslider').bxSlider({
-  	auto:'true'
+  	auto:'true',
+  	adaptiveHeight:'true'
   });
 });
 	</script>
@@ -39,19 +40,33 @@
 			</section>
 		</header>
 		<div class="slider">
+			<div id="nosotros_flotante" class="flotante">
+				<div id="menu_flotante">
+					<ul>
+						<li><a href="#quienes-somos" id="qs">QUIENES SOMOS</a></li>
+						<li><a href="#mision-y-vision" id="mv">MISIÓN Y VISIÓN</a></li>
+						<li><a href="#nuestro-equipo" id="ne">NUESTRO EQUIPO</a></li>
+						<li><a href="#historia" id="h">HISTORIA</a></li>
+					</ul>
+				</div>
+				<div id="separador"></div>
+				<div id="info_flotante">
+					
+				</div>
+			</div>
 			<ul class="bxslider">
 				<li><img src="img/slider/borborSlider1.jpg"></li>
-				<li><img src="img/slider/borborSlider1.jpg"></li>
+				<li><img src="img/slider/borborSlider2.jpg"></li>
 				<li><img src="img/slider/borborSlider1.jpg"></li>
 			</ul>
          </div>
             <nav>
             	<ul>
-                	<li class="linea" ><a href="#">INICIO</a></li>
-                	<li class="linea"><a href="#" >NOSOTROS</a></li>
-                	<li class="linea"><a href="#" >PROYECTOS</a></li>
-                	<li class="linea"><a href="#" >CLIENTES</a></li>
-                	<li><a href="#">CONTACTO</a></li>                                        
+                	<li class="linea" ><a href="#" id="inicio">INICIO</a></li>
+                	<li class="linea"><a href="#nosotros" id="nosotros">NOSOTROS</a></li>
+                	<li class="linea"><a href="#" id="proyectos">PROYECTOS</a></li>
+                	<li class="linea"><a href="#" id="clientes">CLIENTES</a></li>
+                	<li><a href="#" id="contacto">CONTACTO</a></li>                                 
                 </ul>
             </nav>
 	</div>

@@ -87,3 +87,43 @@ footer span{
 	color:#ddd;
 	font-size: 13px;
 }
+#nosotros_flotante{
+	color: #fff;
+	background: -webkit-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.1));
+	height: 100px;
+	width: 100px;
+	margin-top: 20px;
+}
+#menu_flotante{
+	display: inline-block;
+	margin:1em 1em;
+	margin-right: 2em;
+	width: 30%;
+}
+#menu_flotante ul{
+	list-style: none;
+}
+#menu_flotante ul li a{
+	color:#fff;
+	text-decoration: none;
+}
+#menu_flotante ul li{
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+#info_flotante{
+	display: inline-block;
+	margin-top: 1em;
+	padding:0.5em;
+	vertical-align: top;
+	width: 50%;
+}
+#separador{
+	background: -webkit-linear-gradient(#ddd,rgba(0,0,0,0.1));
+	display: inline-block;
+	height: 250px;
+	margin-top: 1em;
+	width: 2px;
+	vertical-align: top;
+	
+}
