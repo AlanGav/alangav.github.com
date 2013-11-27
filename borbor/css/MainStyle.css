@@ -122,10 +122,25 @@ footer span{
 }
 #separador{
 	background: -webkit-linear-gradient(#ddd,rgba(0,0,0,0.1));
+	background: -moz-linear-gradient(#ddd,rgba(0,0,0,0.1));
+	background: -ms-linear-gradient(#ddd,rgba(0,0,0,0.1));
 	display: inline-block;
 	height: 250px;
 	margin-top: 1em;
 	width: 2px;
 	vertical-align: top;
 	
+}
+#imgPrincipal{
+	margin: auto;
+	max-width: 700px;
+	max-height: 492px;
+}
+#imgPrincipal img{
+	width: 100%;
+	max-height: 492px;
+}
+#cerrar{
+	cursor: pointer;
+	margin-left: 1200px;
 }

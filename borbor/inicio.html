@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -5,21 +6,26 @@
 	<meta charset="utf-8"/>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-	<script type="text/javascript" src="js/menu.js">	</script>
+
 	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jsCarousel.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
   	$('.bxslider').bxSlider({
   	auto:'true',
   	adaptiveHeight:'true'
   });
+  	$('#jsCarousel').jsCarousel({  autoscroll: true });
 });
 	</script>
+    <script type="text/javascript" src="js/menu.js">    </script>
+	<link href="css/jsCarousel.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" type="text/css" href="css/MainStyle.css">
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 </head>
 <body>
+
 	<div id="wrapper">
 		<header>
 			<section id="direccion" class="header">
@@ -36,7 +42,7 @@
 			<section id="social" class="header">
 				<a href="#" title="Facebook"><img src="img/social-media/Facebook.png"></a>
 				<a href="#" title="LinkedIn"><img src="img/social-media/LinkedIn.png"></a>
-				<a href="#" title="Youtube"><img src="img/social-media/Youtube.png"></a>
+				<a href="#" title="Youtube"><img src="img/social-media/YouTube.png"></a>
 			</section>
 		</header>
 		<div class="slider">
@@ -55,7 +61,7 @@
 				</div>
 			</div>
 			<ul class="bxslider">
-				<li><img src="img/slider/borborSlider1.jpg"></li>
+				<li><img src="img/slider/borborSlider1.jpg" id="nosotrosSlider"></li>
 				<li><img src="img/slider/borborSlider2.jpg"></li>
 				<li><img src="img/slider/borborSlider1.jpg"></li>
 			</ul>
@@ -69,9 +75,66 @@
                 	<li><a href="#" id="contacto">CONTACTO</a></li>                                 
                 </ul>
             </nav>
-	</div>
+	
 	<footer>
 		<span>&copy;2013BK ARQUITECTOS SAC.ALL RIGHTS RESERVED.LEGAL TERMS.PRIVACY POLICY</span>
 	</footer>
+</div>
+	<div id="sliderDos">
+		<span id="cerrar" style="color:#fff;">Cerrar</span>
+        <div id="imgPrincipal">
+                    
+        </div>
+		<div id="jsCarousel">
+            <div>
+                <img src="slider/images/img_1.jpg" /><br />
+            </div>
+            <div>
+                <img src="slider/images/img_2.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_3.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_4.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_5.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_6.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_7.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_8.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_9.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_10.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_11.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_12.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_13.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_14.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_15.jpg" /><br />
+                </div>
+            <div>
+                <img src="slider/images/img_16.jpg" /><br />
+                </div>
+        </div>
+	</div>
 </body>
 </html>
