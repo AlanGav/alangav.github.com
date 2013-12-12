@@ -11,14 +11,15 @@ $(document).ready(function(){
 		width:ancho,
 		position:'absolute'
 	})
-	$("#efecto").css("left",$("nav ul li a:first").position().left-5+"px")
-	$("#efecto").css('width',$("nav ul li a:first").width()+8+"px")
+	$("#efecto").css("left",$("nav ul li a:first").position().left+3+"px")
+	$("#efecto").css('width',$("nav ul li a:first").width()+5+"px")
 	$("#efecto").hide(0,function(){
-		$(this).show(800)
+		$("#efecto").show(800)
 	})
 
 	$("nav ul li a").on('mouseover',function(){
 	$("#efecto").css('width',$(this).width()+8+"px")
+		$("#efecto").show(800)
 		$("#efecto").animate({
 			left:$(this).position().left+"px"
 		})
