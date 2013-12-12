@@ -9,13 +9,13 @@ $(document).ready(function(){
 		background:'#fff',
 		position:'absolute'
 	})
-	$("#efecto").css("left",$("nav ul li a:first").position().left+3+"px")
+	$("#efecto").css("left",$("nav ul li a:first").position().left+5+"px")
 	$("#efecto").css('width',$("nav ul li a:first").width()+5+"px")
 	
 
 	$("nav ul li a").on('mouseover',function(){		
 		$("#efecto").animate({
-			left:$(this).position().left+3+"px",
+			left:$(this).position().left+5+"px",
 			width:$(this).stop().width()+8+"px"
 		})
 	})
