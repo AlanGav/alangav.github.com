@@ -3,26 +3,20 @@ $(document).ready(function(){
 	$("#proyectos_flotante").hide(0)
 		$("#clientes_flotante").hide(0)
 	$("#sliderDos").hide()
-	ancho = $("nav ul li:first").width()-50
 	$("nav ul").append("<div id=efecto></div>")
 	$("#efecto").css({
 		height:'2px',
 		background:'#fff',
-		width:ancho,
 		position:'absolute'
 	})
-	
-	$("#efecto").hide(0,function(){
-		$("#efecto").css("left",$("nav ul li a:first").position().left+3+"px")
+	$("#efecto").css("left",$("nav ul li a:first").position().left+3+"px")
 	$("#efecto").css('width',$("nav ul li a:first").width()+5+"px")
-		$("#efecto").show(800)
-	})
+	
 
-	$("nav ul li a").on('mouseover',function(){
-	$("#efecto").css('width',$(this).width()+8+"px")
-		$("#efecto").show(800)
+	$("nav ul li a").on('mouseover',function(){		
 		$("#efecto").animate({
-			left:$(this).position().left+"px"
+			left:$(this).position().left+3+"px",
+			width:$(this).stop().width()+8+"px"
 		})
 	})
 	//Situar flotantes
