@@ -13,7 +13,9 @@
 		$(document).ready(function(){
   	$('.bxslider').bxSlider({
   	auto:'true',
-  	adaptiveHeight:'true'
+  	adaptiveHeight:'true',
+    speed:5000,
+    mode:'fade'
   });
   	$('#jsCarousel').jsCarousel({  autoscroll: true });
 });
@@ -60,19 +62,71 @@
 					
 				</div>
 			</div>
+            <div id="proyectos_flotante" class="flotante">
+                <div id="menu_proyectos" class="proyectos">
+                    <ul>
+                        <li><a href="#quienes-somos" id="qs">RETAIL</a></li>
+                        <li><a href="#mision-y-vision" id="mv">VIVIENDA</a></li>
+                        <li><a href="#nuestro-equipo" id="ne">SALUD</a></li>
+                        <li><a href="#historia" id="h">OFICINAS</a></li>
+                        <li><a href="#historia" id="h">INDUSTRIAL</a></li>
+                        <li><a href="#historia" id="h">EDUCACIÓN</a></li>
+                        <li><a href="#historia" id="h">DEPORTE</a></li>
+                    </ul>
+                </div>
+                <div id="separador_proyectos" class="proyectos"></div>
+                <div id="submenu_proyectos" class="proyectos">
+                    
+                        <ul>
+                            <li><a href="#" id="bf">BF PLN</a></li>
+                            <li><a href="#" id="bf">CENTRO DE TARJETAS OH</a></li>
+                            <li><a href="#" id="bf">COTTON'S JEANS MEGAPLAZA</a></li>
+                        </ul>
+                    
+                </div>
+                <div id="separador_proyectos2" class="proyectos"></div>
+                <div id="info_proyectos" class="proyectos"></div>
+            </div>
+            <div id="clientes_flotante" class="flotante">
+                <div id="menu_clientes">
+                    <ul>
+                        <li><a href="#quienes-somos" id="qs">QUIENES SOMOS</a></li>
+                        <li><a href="#mision-y-vision" id="mv">MISIÓN Y VISIÓN</a></li>
+                        <li><a href="#nuestro-equipo" id="ne">NUESTRO EQUIPO</a></li>
+                        <li><a href="#historia" id="h">HISTORIA</a></li>
+                    </ul>
+                </div>
+                <div id="separador"></div>
+                <div id="info_clientes">
+                    
+                </div>
+            </div>
+
 			<ul class="bxslider">
-				<li><img src="img/slider/borborSlider1.jpg" id="nosotrosSlider"></li>
-				<li><img src="img/slider/borborSlider2.jpg"></li>
-				<li><img src="img/slider/borborSlider1.jpg"></li>
+				<li><img src="img/slider/1.jpg" id="nosotrosSlider"></li>
+				<li><img src="img/slider/2.jpg"></li>
+				<li><img src="img/slider/3.jpg"></li>
+                <li><img src="img/slider/4.jpg"></li>
+                <li><img src="img/slider/5.jpg"></li>
+                <li><img src="img/slider/6.jpg"></li>
+                <li><img src="img/slider/7.jpg"></li>
+                <li><img src="img/slider/8.jpg"></li>
+                <li><img src="img/slider/9.jpg"></li>
+                <li><img src="img/slider/10.jpg"></li>
+                <li><img src="img/slider/11.jpg"></li>
+                <li><img src="img/slider/12.jpg"></li>
+                <li><img src="img/slider/13.jpg"></li>
+                <li><img src="img/slider/14.jpg"></li>
+                <li><img src="img/slider/15.jpg"></li>
 			</ul>
          </div>
-            <nav>
+            <nav id="nav">
             	<ul>
-                	<li class="linea" ><a href="#" id="inicio">INICIO</a></li>
+                	<li class="linea" ><a href="#nav" id="inicio">INICIO</a></li>
                 	<li class="linea"><a href="#nosotros" id="nosotros">NOSOTROS</a></li>
-                	<li class="linea"><a href="#" id="proyectos">PROYECTOS</a></li>
-                	<li class="linea"><a href="#" id="clientes">CLIENTES</a></li>
-                	<li><a href="#" id="contacto">CONTACTO</a></li>                                 
+                	<li class="linea"><a href="#nav" id="proyectos">PROYECTOS</a></li>
+                	<li class="linea"><a href="#nav" id="clientes">CLIENTES</a></li>
+                	<li><a href="#" id="contacto">CONTACTO</a></li>
                 </ul>
             </nav>
 	
@@ -83,7 +137,6 @@
 	<div id="sliderDos">
 		<span id="cerrar" style="color:#fff;">Cerrar</span>
         <div id="imgPrincipal">
-                    
         </div>
 		<div id="jsCarousel">
             <div>
