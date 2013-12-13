@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$("#nosotros_flotante").hide(0)
 	$("#proyectos_flotante").hide(0)
-		$("#clientes_flotante").hide(0)
+	$("#clientes_flotante").hide(0)
 	$("#sliderDos").hide()
 	$("nav ul").append("<div id=efecto></div>")
 	$("#efecto").css({
@@ -30,12 +30,19 @@ $(document).ready(function(){
 	})
 	$("#proyectos_flotante").css({
 		"left":slider.left+43,
-		"width":'440px',
+		"width":'690px',
 		"height":'310px',
 		"position":'absolute',
 		"z-index":'100'
 	})
-		$("#clientes_flotante").hide()
+	$("#clientes_flotante").css({
+		"left":slider.left+420,
+		"width":'420px',
+		"height":'320px',
+		"position":'absolute',
+		"z-index":'100'
+
+	})
 	$("#menu_flotante ul li:first > a").css('border-bottom','2px solid #fff')
 	$("#menu_flotante ul li a").on('click',function(i){
 		idClick= $(this).attr('id')
@@ -55,6 +62,23 @@ $(document).ready(function(){
 		
 
 	})
+//Clientes menu
+	$("#menu_clientes ul li:first > a").css('border-bottom','2px solid #fff')
+	$("#menu_clientes ul li a").on('click',function(i){
+		idClick= $(this).attr('id')
+		$("#menu_clientes ul li a").each(function(i){
+				if($(this).attr('id')==idClick ){
+						$(this).css('border-bottom','2px solid #fff')
+						$("#info_clientes").load("clientes.html #"+idClick)
+				}
+				else{
+					$(this).css('border-bottom','none')	
+				}
+		})
+		
+
+	})
+
 	//Al dar click en inicio se cierra cualquier flotante abierto
 	$("#inicio").on('click',function () {
 		$(".flotante").fadeOut(500)
@@ -76,13 +100,54 @@ $(document).ready(function(){
 		$(".flotante").hide(0,function(){
 			$("#proyectos_flotante").stop().fadeIn(500)	
 		})
-		
-		
 	})
+		$("#submenu_proyectos #ret").hide(0)
+		$("#submenu_proyectos #viv").hide(0)
+		$("#submenu_proyectos #sal").hide(0)
+		$("#submenu_proyectos #ofi").hide(0)
+		$("#submenu_proyectos #ind").hide(0)
+		$("#submenu_proyectos #edu").hide(0)
+		$("#submenu_proyectos #dep").hide(0)
+
+	$("#menu_proyectos ul li a").on('click',function(i){
+		valor= $(this).attr('id')
+		$("#menu_proyectos ul li a").each(function(i){
+				if($(this).attr('id')==valor ){
+						$(this).css('border-bottom','2px solid #fff')
+						$("#submenu_proyectos #"+valor).show()	
+				}
+				else{
+					$(this).css('border-bottom','none')	
+					$("#submenu_proyectos #"+$(this).attr('id')).hide(0)
+				}
+		})
+	})
+
+	$("#submenu_proyectos ul li a").on('click',function(i){
+		idClick= $(this).attr('id')
+		$("#submenu_proyectos ul li a").each(function(i){
+				if($(this).attr('id')==idClick ){
+						$(this).css('border-bottom','2px solid #fff')
+						$("#info_proyectos").load('proyectos.html #'+idClick,function(){
+							$(this).hide(0,function(){
+								$(this).stop().fadeIn(500)
+							})
+						})
+					
+				
+				}
+				else{
+					$(this).css('border-bottom','none')	
+				}
+		})
+		
+
+	})
+
 	//Aparecer el flotante clientes
 	$("#clientes").on('click',function(){
 		$(".flotante").hide(0,function(){
-			$("#clientes_flotante").fadeIn(500)	
+			$("#clientes_flotante").stop().fadeIn(500)	
 		})
 		
 		
@@ -113,6 +178,10 @@ $(document).ready(function(){
 			})
 	})
 
+	$("#cerrar").css({
+		position:'absolute',
+		left:$("#wrapper").position().left+120+"px"
+	})
 	//Hacer img grande del thumb
 	$("#jsCarousel div img").on('click',function(){
 		ruta = $(this).attr('src')
