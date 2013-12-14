@@ -2,6 +2,7 @@ $(document).ready(function(){
 	$("#nosotros_flotante").hide(0)
 	$("#proyectos_flotante").hide(0)
 	$("#clientes_flotante").hide(0)
+	$("#contacto_flotante").hide(0)
 	$("#sliderDos").hide()
 	$("nav ul").append("<div id=efecto></div>")
 	$("#efecto").css({
@@ -9,9 +10,11 @@ $(document).ready(function(){
 		background:'#fff',
 		position:'absolute'
 	})
-	$("#efecto").css("left",$("nav ul li a:first").position().left+5+"px")
-	$("#efecto").css('width',$("nav ul li a:first").width()+5+"px")
-	
+		$("#efecto").hide(0)
+	$("#efecto").fadeIn(1000,function(){
+		$("#efecto").css("left",$("nav ul li a:first").position().left+5+"px")
+		$("#efecto").css('width',$("nav ul li a:first").width()+5+"px")	
+	})
 
 	$("nav ul li a").on('mouseover',function(){		
 		$("#efecto").animate({
@@ -21,23 +24,32 @@ $(document).ready(function(){
 	})
 	//Situar flotantes
 	slider = $(".slider").position()
+	izquierda= slider.left
 	$("#nosotros_flotante").css({
-		"left":slider.left+43,
+		"left":izquierda+60+"px",
 		"width":'420px',
 		"height":'330px',
 		"position":'absolute',
 		"z-index":'100'
 	})
 	$("#proyectos_flotante").css({
-		"left":slider.left+43,
+		"left":izquierda+60+"px",
 		"width":'690px',
 		"height":'310px',
 		"position":'absolute',
 		"z-index":'100'
 	})
 	$("#clientes_flotante").css({
-		"left":slider.left+420,
+		"left":izquierda+420+"px",
 		"width":'420px',
+		"height":'320px',
+		"position":'absolute',
+		"z-index":'100'
+
+	})
+	$("#contacto_flotante").css({
+		"left":izquierda+300+"px",
+		"width":'550px',
 		"height":'320px',
 		"position":'absolute',
 		"z-index":'100'
@@ -69,14 +81,13 @@ $(document).ready(function(){
 		$("#menu_clientes ul li a").each(function(i){
 				if($(this).attr('id')==idClick ){
 						$(this).css('border-bottom','2px solid #fff')
-						$("#info_clientes").load("clientes.html #"+idClick)
+						$("#info_clientes").load("clientes.html #"+idClick).hide(0)
+						$("#info_clientes").fadeIn(500)
 				}
 				else{
 					$(this).css('border-bottom','none')	
 				}
 		})
-		
-
 	})
 
 	//Al dar click en inicio se cierra cualquier flotante abierto
@@ -97,9 +108,9 @@ $(document).ready(function(){
 	})
 	//Aparecer el flotante proyectos
 	$("#proyectos").on('click',function(){
-		$(".flotante").hide(0,function(){
+			$(".flotante").hide()
 			$("#proyectos_flotante").stop().fadeIn(500)	
-		})
+		
 	})
 		$("#submenu_proyectos #ret").hide(0)
 		$("#submenu_proyectos #viv").hide(0)
@@ -146,15 +157,37 @@ $(document).ready(function(){
 
 	//Aparecer el flotante clientes
 	$("#clientes").on('click',function(){
-		$(".flotante").hide(0,function(){
-			$("#clientes_flotante").stop().fadeIn(500)	
+		$(".flotante").hide()
+		$("#clientes_flotante").stop().fadeIn(500)	
+	})
+	//Aparecer el flotante contacto
+	$("#contacto").on('click',function(){
+		$(".flotante").hide()
+		$("#contacto_flotante").fadeIn(500)
+	})
+	//Menu contacto
+//	$("#menu_contacto ul li a:first > span ").css('border-bottom','2px solid #fff')
+	$("#menu_contacto ul li a").on('click',function(i){
+		idClick= $(this).attr('id')
+		$("#menu_contacto ul li a").each(function(i){
+				if($(this).attr('id')==idClick ){
+
+						$("#"+idClick+"1").css('border-bottom','2px solid #fff')
+						
+						$("#info_contacto").load('contacto.html #'+idClick)
+				}
+				else{
+					$("#"+$(this).attr('id')+"1").css('border-bottom','none')
+
+				}
 		})
 		
-		
+
 	})
+
 	//Cargar slider aparte (pantalla negra)
-	
-	$("#nosotrosSlider").on('click',function(){			
+	altura = $("body").height()+100
+	$(".bannerPrincipal").on('click',function(){			
 			
 		$("#sliderDos").fadeIn()
 		path = $("#jsCarousel div img:first").attr('src')
@@ -166,7 +199,7 @@ $(document).ready(function(){
 				top:'0px',
 				background:'#000',
 				width:window.innerWidth+"px",
-				height:$("body").height()+"px",
+				height:altura+"px",
 				"z-index":'200',
 				"margin-top":"3em"
 			})

@@ -16,13 +16,16 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 1em;
+	margin: 0 auto 0em;
 	padding: 0;
 	*zoom: 1;
+	width: 960px;
+	height: 360px;
 }
 
 .bx-wrapper img {
-	max-width: 100%;
+	width: 960px;
+	height: 380px;
 	display: block;
 }
 
@@ -30,10 +33,7 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	
-	
-	left: -5px;
-	background: #fff;
+
 }
 
 .bx-wrapper .bx-pager,
