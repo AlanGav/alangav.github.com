@@ -65,6 +65,7 @@ text-shadow:2px 0px 2px #000;
 }
 nav ul{
 	list-style:none;
+	margin-top: 3em;
 	}
 nav ul li a{
 	padding: 0.5em;
@@ -90,14 +91,23 @@ footer{
 footer span{
 	color:#ddd;
 	font-size: 11px;
+	margin-top:1em; 
 }
 #nosotros_flotante,#proyectos_flotante{
 	color: #fff;
 	background: -webkit-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3));
 	background: -moz-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3));
 	background: -ms-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3));
-	margin-top: 190px;
+	margin-top: 50px;
 	overflow: auto;
+}
+#clientes_flotante,#contacto_flotante{
+	color: #fff;
+	background: -webkit-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3));
+	background: -moz-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3));
+	background: -ms-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3));
+	padding:1em;
+	margin-top: 50px;	
 }
 #menu_flotante{
 	display: inline-block;
@@ -114,7 +124,7 @@ footer span{
 }
 #menu_flotante ul li{
 	margin-bottom: 0.5em;
-	text-align: center;
+	text-align: left;
 }
 #info_flotante{
 	display: inline-block;
@@ -152,12 +162,11 @@ footer span{
 	margin-left: 1200px;
 }
 .slider{
-	margin-bottom: 20px;
+
+
 }
 /*PROYECTOS*/
-#proyectos_flotante{
-	
-}
+
 #menu_proyectos{
 	width: 20%;
 }
@@ -166,6 +175,9 @@ ul{
 }
 #menu_proyectos ul li a{
 	color: #fff;
+}
+#menu_proyectos ul li{
+	margin-bottom: 0.5em;
 }
 a{
 	text-decoration: none;
@@ -182,13 +194,22 @@ a{
 }
 #submenu_proyectos{
 	padding: 0.25em;
+	margin-right: 2em;
 	width: 39%;
 }
-#submenu_proyectos ul li a{
+#submenu_proyectos ul  li a{
 	color: #fff;
 }
+#submenu_proyectos ul  li{
+	margin-bottom: 0.5em;
+}
 #info_proyectos{
-	width: 39%;
+	display: inline-block;
+	font-size: 13px;
+	padding:0.5em;
+	width: 30%;
+	vertical-align: top;
+	
 }
 .proyectos{
 	display: inline-block;
@@ -199,4 +220,44 @@ a{
 }
 #proyectos_flotante div{
 	margin-top: 0.25em;
+}
+#menu_clientes ul li ,#menu_contacto ul li{
+	margin-bottom: 0.5em;
+}
+#menu_clientes ul li a,#menu_contacto ul li a{
+	color:#fff;
+}
+#clientes_flotante div,#contacto_flotante div
+{
+	display: inline-block;
+}
+#menu_clientes{
+	margin-top: 0.25em;
+	padding-right: 8em;
+}
+#info_clientes{
+	vertical-align: top;
+}
+#info_clientes img{
+	width: 150px;
+	margin: auto;
+	margin-top: 2em;
+	margin-left: 1em;
+}
+#menu_contacto{
+	margin-top: 0.25em;
+	padding-right: 2em;
+	width: 30%;
+}
+#contacto_flotante #separador{
+	margin-top: 0.25em;
+}
+#servicios label{
+float: left;
+clear: both;
+}
+#info_contacto{
+	background: red;
+	width: 50%;
+	vertical-align: top;
 }
