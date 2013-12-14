@@ -13,7 +13,6 @@
 		$(document).ready(function(){
   	$('.bxslider').bxSlider({
   	auto:'true',
-  	adaptiveHeight:'true',
     speed:5000,
     mode:'fade'
   });
@@ -51,10 +50,10 @@
 			<div id="nosotros_flotante" class="flotante">
 				<div id="menu_flotante">
 					<ul>
-						<li><a href="#quienes-somos" id="qs">QUIENES SOMOS</a></li>
-						<li><a href="#mision-y-vision" id="mv">MISIÓN Y VISIÓN</a></li>
-						<li><a href="#nuestro-equipo" id="ne">NUESTRO EQUIPO</a></li>
-						<li><a href="#historia" id="h">HISTORIA</a></li>
+						<li><a id="qs">QUIENES SOMOS</a></li>
+						<li><a id="mv">MISIÓN Y VISIÓN</a></li>
+						<li><a id="ne">NUESTRO EQUIPO</a></li>
+						<li><a id="h">HISTORIA</a></li>
 					</ul>
 				</div>
 				<div id="separador"></div>
@@ -65,23 +64,54 @@
             <div id="proyectos_flotante" class="flotante">
                 <div id="menu_proyectos" class="proyectos">
                     <ul>
-                        <li><a href="#quienes-somos" id="qs">RETAIL</a></li>
-                        <li><a href="#mision-y-vision" id="mv">VIVIENDA</a></li>
-                        <li><a href="#nuestro-equipo" id="ne">SALUD</a></li>
-                        <li><a href="#historia" id="h">OFICINAS</a></li>
-                        <li><a href="#historia" id="h">INDUSTRIAL</a></li>
-                        <li><a href="#historia" id="h">EDUCACIÓN</a></li>
-                        <li><a href="#historia" id="h">DEPORTE</a></li>
+                        <li><a id="ret">RETAIL</a></li>
+                        <li><a id="viv">VIVIENDA</a></li>
+                        <li><a id="sal">SALUD</a></li>
+                        <li><a id="ofi">OFICINAS</a></li>
+                        <li><a id="ind">INDUSTRIAL</a></li>
+                        <li><a  id="edu">EDUCACIÓN</a></li>
+                        <li><a id="dep">DEPORTE</a></li>
                     </ul>
                 </div>
                 <div id="separador_proyectos" class="proyectos"></div>
                 <div id="submenu_proyectos" class="proyectos">
                     
-                        <ul>
-                            <li><a href="#" id="bf">BF PLN</a></li>
-                            <li><a href="#" id="bf">CENTRO DE TARJETAS OH</a></li>
-                            <li><a href="#" id="bf">COTTON'S JEANS MEGAPLAZA</a></li>
+                        <ul id="ret">
+                            <li><a  id="bf">BF PLN</a></li>
+                            <li><a  id="oh">CENTRO DE TARJETAS OH</a></li>
+                            <li><a  id="cotton">COTTON'S JEANS MEGAPLAZA</a></li>                        
                         </ul>
+                         <ul id="viv">
+                            <li><a  id="bf">BF PLN</a></li>
+                            <li><a  id="oh">CENTRO DE TARJETAS OH</a></li>
+                            <li><a  id="cotton">COTTON'S JEANS MEGAPLAZA</a></li>                        
+                        </ul>
+                        <ul id="sal">
+                            <li><a  id="bf">BF PLN</a></li>
+                            <li><a  id="oh">CENTRO DE TARJETAS OH</a></li>
+                            <li><a  id="cotton">COTTON'S JEANS MEGAPLAZA</a></li>                        
+                        </ul>
+                        <ul id="ofi">
+                            <li><a  id="bf">BF PLN</a></li>
+                            <li><a  id="oh">CENTRO DE TARJETAS OH</a></li>
+                            <li><a  id="cotton">COTTON'S JEANS MEGAPLAZA</a></li>                        
+                        </ul>
+                        <ul id="ind">
+                            <li><a  id="bf">BF PLN</a></li>
+                            <li><a  id="oh">CENTRO DE TARJETAS OH</a></li>
+                            <li><a  id="cotton">COTTON'S JEANS MEGAPLAZA</a></li>                        
+                        </ul>
+                        <ul id="edu">
+                            <li><a  id="bf">BF PLN</a></li>
+                            <li><a  id="oh">CENTRO DE TARJETAS OH</a></li>
+                            <li><a  id="cotton">COTTON'S JEANS MEGAPLAZA</a></li>                        
+                        </ul>
+                        <ul id="dep">
+                            <li><a  id="bf">BF PLN</a></li>
+                            <li><a  id="oh">CENTRO DE TARJETAS OH</a></li>
+                            <li><a  id="cotton">COTTON'S JEANS MEGAPLAZA</a></li>                        
+                        </ul>
+
                     
                 </div>
                 <div id="separador_proyectos2" class="proyectos"></div>
@@ -90,43 +120,56 @@
             <div id="clientes_flotante" class="flotante">
                 <div id="menu_clientes">
                     <ul>
-                        <li><a href="#quienes-somos" id="qs">QUIENES SOMOS</a></li>
-                        <li><a href="#mision-y-vision" id="mv">MISIÓN Y VISIÓN</a></li>
-                        <li><a href="#nuestro-equipo" id="ne">NUESTRO EQUIPO</a></li>
-                        <li><a href="#historia" id="h">HISTORIA</a></li>
+                        <li><a id="sodimac">SODIMAC</a></li>
+                        <li><a id="cotton">COTTON'S JEANS</a></li>
+                        <li><a id="oeschsle">OESCHSLE</a></li>
+                        <li><a id="falabella">BANCO FALABELLA</a></li>
                     </ul>
                 </div>
-                <div id="separador"></div>
+            <div id="separador"></div>
                 <div id="info_clientes">
+                    
+                </div>
+            </div>
+             <div id="contacto_flotante" class="flotante">
+                <div id="menu_contacto">
+                    <ul>
+                        <li><a id="servicios">SOLICITA NUESTROS <span id="servicios1">SERVICIOS</span></a></li>
+                        <li><a id="equipo">SE PARTE DEL <span id="equipo1">EQUIPO</span></a></li>
+                        <li><a id="ubicanos"><span id="ubicanos1">UBÍCANOS</span></a></li>
+                    </ul>
+                </div>
+            <div id="separador"></div>
+                <div id="info_contacto">
                     
                 </div>
             </div>
 
 			<ul class="bxslider">
-				<li><img src="img/slider/1.jpg" id="nosotrosSlider"></li>
-				<li><img src="img/slider/2.jpg"></li>
-				<li><img src="img/slider/3.jpg"></li>
-                <li><img src="img/slider/4.jpg"></li>
-                <li><img src="img/slider/5.jpg"></li>
-                <li><img src="img/slider/6.jpg"></li>
-                <li><img src="img/slider/7.jpg"></li>
-                <li><img src="img/slider/8.jpg"></li>
-                <li><img src="img/slider/9.jpg"></li>
-                <li><img src="img/slider/10.jpg"></li>
-                <li><img src="img/slider/11.jpg"></li>
-                <li><img src="img/slider/12.jpg"></li>
-                <li><img src="img/slider/13.jpg"></li>
-                <li><img src="img/slider/14.jpg"></li>
-                <li><img src="img/slider/15.jpg"></li>
+			 <li><img src="img/slider/1.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/2.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/3.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/4.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/5.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/6.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/7.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/8.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/9.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/10.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/11.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/12.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/13.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/14.jpg" class="bannerPrincipal"></li>
+                <li><img src="img/slider/15.jpg" class="bannerPrincipal"></li>
 			</ul>
          </div>
             <nav id="nav">
             	<ul>
-                	<li class="linea" ><a href="#nav" id="inicio">INICIO</a></li>
-                	<li class="linea"><a href="#nosotros" id="nosotros">NOSOTROS</a></li>
-                	<li class="linea"><a href="#nav" id="proyectos">PROYECTOS</a></li>
-                	<li class="linea"><a href="#nav" id="clientes">CLIENTES</a></li>
-                	<li><a href="#" id="contacto">CONTACTO</a></li>
+                	<li class="linea" id="inicio"><a id="inicio">INICIO</a></li>
+                	<li class="linea" id="nosotros"><a id="nosotros">NOSOTROS</a></li>
+                	<li class="linea" id="proyectos"><a id="proyectos">PROYECTOS</a></li>
+                	<li class="linea" id="clientes"><a id="clientes">CLIENTES</a></li>
+                	<li id="contacto"><a id="contacto">CONTACTO</a></li>
                 </ul>
             </nav>
 	
@@ -135,58 +178,7 @@
 	</footer>
 </div>
 	<div id="sliderDos">
-		<span id="cerrar" style="color:#fff;">Cerrar</span>
-        <div id="imgPrincipal">
-        </div>
-		<div id="jsCarousel">
-            <div>
-                <img src="slider/images/img_1.jpg" /><br />
-            </div>
-            <div>
-                <img src="slider/images/img_2.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_3.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_4.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_5.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_6.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_7.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_8.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_9.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_10.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_11.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_12.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_13.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_14.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_15.jpg" /><br />
-                </div>
-            <div>
-                <img src="slider/images/img_16.jpg" /><br />
-                </div>
+		
         </div>
 	</div>
 </body>

@@ -1,44 +1,60 @@
 $(document).ready(function(){
 	$("#nosotros_flotante").hide(0)
 	$("#proyectos_flotante").hide(0)
+	$("#clientes_flotante").hide(0)
+	$("#contacto_flotante").hide(0)
 	$("#sliderDos").hide()
-	ancho = $("nav ul li:first").width()-50
 	$("nav ul").append("<div id=efecto></div>")
 	$("#efecto").css({
 		height:'2px',
 		background:'#fff',
-		width:ancho,
 		position:'absolute'
 	})
-	$("#efecto").css("left",$("nav ul li a:first").position().left-5+"px")
-	$("#efecto").css('width',$("nav ul li a:first").width()+8+"px")
-	$("#efecto").hide(0,function(){
-		$(this).show(800)
+		$("#efecto").hide(0)
+	$("#efecto").fadeIn(1000,function(){
+		$("#efecto").css("left",$("nav ul li a:first").position().left+5+"px")
+		$("#efecto").css('width',$("nav ul li a:first").width()+5+"px")	
 	})
 
-	$("nav ul li a").on('mouseover',function(){
-	$("#efecto").css('width',$(this).width()+8+"px")
+	$("nav ul li a").on('mouseover',function(){		
 		$("#efecto").animate({
-			left:$(this).position().left+"px"
+			left:$(this).position().left+5+"px",
+			width:$(this).stop().width()+8+"px"
 		})
 	})
 	//Situar flotantes
 	slider = $(".slider").position()
+	izquierda= slider.left
 	$("#nosotros_flotante").css({
-		"left":slider.left+43,
+		"left":izquierda+60+"px",
 		"width":'420px',
-		"height":'330px',
-		"position":'absolute',
-		"z-index":'100'
-	})
-	$("#proyectos_flotante").css({
-		"left":slider.left+43,
-		"width":'440px',
 		"height":'310px',
 		"position":'absolute',
 		"z-index":'100'
 	})
+	$("#proyectos_flotante").css({
+		"left":izquierda+60+"px",
+		"width":'690px',
+		"height":'290px',
+		"position":'absolute',
+		"z-index":'100'
+	})
+	$("#clientes_flotante").css({
+		"left":izquierda+420+"px",
+		"width":'420px',
+		"height":'300px',
+		"position":'absolute',
+		"z-index":'100'
 
+	})
+	$("#contacto_flotante").css({
+		"left":izquierda+320+"px",
+		"width":'520px',
+		"height":'310px',
+		"position":'absolute',
+		"z-index":'100'
+
+	})
 	$("#menu_flotante ul li:first > a").css('border-bottom','2px solid #fff')
 	$("#menu_flotante ul li a").on('click',function(i){
 		idClick= $(this).attr('id')
@@ -58,14 +74,33 @@ $(document).ready(function(){
 		
 
 	})
+//Clientes menu
+	$("#menu_clientes ul li:first > a").css('border-bottom','2px solid #fff')
+	$("#info_clientes").load("clientes.html #sodimac")
+	$("#menu_clientes ul li a").on('click',function(i){
+		idClick= $(this).attr('id')
+		$("#menu_clientes ul li a").each(function(i){
+				if($(this).attr('id')==idClick ){
+						$(this).css('border-bottom','2px solid #fff')
+						$("#info_clientes").load("clientes.html #"+idClick).hide(0)
+						$("#info_clientes").fadeIn(500)
+				}
+				else{
+					$(this).css('border-bottom','none')	
+				}
+		})
+	})
+
 	//Al dar click en inicio se cierra cualquier flotante abierto
 	$("#inicio").on('click',function () {
 		$(".flotante").fadeOut(500)
 	})
 	//Aparecer el flotante de nosotros y cambiar el texto respecto al click
 	$("#nosotros").on('click',function(){
-		$("#proyectos_flotante").hide(0)
-		$("#nosotros_flotante").fadeIn(500)
+		$(".flotante").hide(0,function(){
+			$("#nosotros_flotante").fadeIn(500)	
+		})
+		
 		$("#info_flotante").load('nosotros.html #qs',function(){
 			$(this).hide(0,function(){
 				$(this).fadeIn(500)
@@ -74,26 +109,93 @@ $(document).ready(function(){
 	})
 	//Aparecer el flotante proyectos
 	$("#proyectos").on('click',function(){
-		$(".flotante").hide(0,function(){
-			$("#proyectos_flotante").fadeIn(500)	
-		})
-		
+			$(".flotante").hide()
+			$("#proyectos_flotante").stop().fadeIn(500)	
 		
 	})
+		$("#submenu_proyectos #ret").hide(0)
+		$("#submenu_proyectos #viv").hide(0)
+		$("#submenu_proyectos #sal").hide(0)
+		$("#submenu_proyectos #ofi").hide(0)
+		$("#submenu_proyectos #ind").hide(0)
+		$("#submenu_proyectos #edu").hide(0)
+		$("#submenu_proyectos #dep").hide(0)
+		$("#menu_proyectos ul li a:first").css('border-bottom','2px solid #fff')
+	$("#menu_proyectos ul li a").on('click',function(i){
+		valor= $(this).attr('id')
+		$("#menu_proyectos ul li a").each(function(i){
+				if($(this).attr('id')==valor ){
+						$(this).css('border-bottom','2px solid #fff')
+						$("#submenu_proyectos #"+valor).show()	
+				}
+				else{
+					$(this).css('border-bottom','none')	
+					$("#submenu_proyectos #"+$(this).attr('id')).hide(0)
+				}
+		})
+	})
+
+	$("#submenu_proyectos ul li a").on('click',function(i){
+		idClick= $(this).attr('id')
+		$("#submenu_proyectos ul li a").each(function(i){
+				if($(this).attr('id')==idClick ){
+						$(this).css('border-bottom','2px solid #fff')
+						$("#info_proyectos").load('proyectos.html #'+idClick,function(){
+							$(this).hide(0,function(){
+								$(this).stop().fadeIn(500)
+							})
+						})	
+
+
+				}
+				else{
+					$(this).css('border-bottom','none')	
+				}
+		})
+		
+
+	})
+
 	//Aparecer el flotante clientes
 	$("#clientes").on('click',function(){
-		$(".flotante").hide(0,function(){
-			$("#clientes_flotante").fadeIn(500)	
+		$(".flotante").hide()
+		$("#clientes_flotante").stop().fadeIn(500)	
+	})
+	//Aparecer el flotante contacto
+	$("#contacto").on('click',function(){
+		$(".flotante").hide()
+		$("#contacto_flotante").fadeIn(500)
+	})
+	//Menu contacto
+//	$("#menu_contacto ul li a:first > span ").css('border-bottom','2px solid #fff')
+$("#info_contacto").load('contacto.html #servicios')
+$("#servicios1").css('border-bottom','2px solid #fff')
+	$("#menu_contacto ul li a").on('click',function(i){
+		idClick= $(this).attr('id')
+		$("#menu_contacto ul li a").each(function(i){
+				if($(this).attr('id')==idClick ){
+
+						$("#"+idClick+"1").css('border-bottom','2px solid #fff')
+						
+						$("#info_contacto").load('contacto.html #'+idClick).hide(0,function(){
+							$(this).fadeIn(500)
+						})
+				}
+				else{
+					$("#"+$(this).attr('id')+"1").css('border-bottom','none')
+
+				}
 		})
 		
-		
+
 	})
+
 	//Cargar slider aparte (pantalla negra)
-	
-	$("#nosotrosSlider").on('click',function(){			
-			
+	altura = $("body").height()+100
+	$(".bannerPrincipal").on('click',function(){	
+		path = $(this).attr('src')
 		$("#sliderDos").fadeIn()
-		path = $("#jsCarousel div img:first").attr('src')
+		//path = $("#jsCarousel div img:first").attr('src')
 		$("#imgPrincipal").html("<img src="+path+" >")
 		$('.bx-prev').hide()
 		$('.bx-next').hide()
@@ -102,7 +204,7 @@ $(document).ready(function(){
 				top:'0px',
 				background:'#000',
 				width:window.innerWidth+"px",
-				height:$("body").height()+"px",
+				height:altura+"px",
 				"z-index":'200',
 				"margin-top":"3em"
 			})
@@ -114,6 +216,11 @@ $(document).ready(function(){
 			})
 	})
 
+	$("#cerrar").css({
+		position:'absolute',
+		left:$("#slider").position.left+100+"px"
+	})
+
 	//Hacer img grande del thumb
 	$("#jsCarousel div img").on('click',function(){
 		ruta = $(this).attr('src')
@@ -121,4 +228,6 @@ $(document).ready(function(){
 			$(this).fadeIn(500)
 		})
 	})
+	
+		
 })

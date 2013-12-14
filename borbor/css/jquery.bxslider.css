@@ -16,13 +16,16 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 1em;
+	margin: 0 auto 0em;
 	padding: 0;
 	*zoom: 1;
+	width: 960px;
+	height: 360px;
 }
 
 .bx-wrapper img {
-	max-width: 100%;
+	width: 960px;
+	height: 380px;
 	display: block;
 }
 
@@ -30,10 +33,7 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	
-	
-	left: -5px;
-	background: #fff;
+
 }
 
 .bx-wrapper .bx-pager,
@@ -97,23 +97,20 @@
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(images/controls.png) no-repeat 0 -32px;
+	background: url(images/flechaBack.png) no-repeat;
 	z-index: 100;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(images/controls.png) no-repeat -43px -32px;
+	display: block;
+	background: url(images/flechaNext.png) no-repeat;
 	z-index: 100;
 }
 
-.bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
-}
 
-.bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
-}
+
+
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
