@@ -6,7 +6,8 @@
 	<meta charset="utf-8"/>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
 	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
     <script src="js/jsCarousel.js" type="text/javascript"></script>
 	<script type="text/javascript">
@@ -19,14 +20,15 @@
   	$('#jsCarousel').jsCarousel({  autoscroll: true });
 });
 	</script>
+    <script type="text/javascript" src="js/subir.js"></script>
     <script type="text/javascript" src="js/menu.js">    </script>
 	<link href="css/jsCarousel.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" type="text/css" href="css/MainStyle.css">
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
-
 	<div id="wrapper">
 		<header>
 			<section id="direccion" class="header">
@@ -74,8 +76,7 @@
                     </ul>
                 </div>
                 <div id="separador_proyectos" class="proyectos"></div>
-                <div id="submenu_proyectos" class="proyectos">
-                    
+                <div id="submenu_proyectos" class="proyectos">  
                         <ul id="ret">
                             <li><a  id="bf">BF PLN</a></li>
                             <li><a  id="oh">CENTRO DE TARJETAS OH</a></li>
@@ -110,9 +111,7 @@
                             <li><a  id="bf">BF PLN</a></li>
                             <li><a  id="oh">CENTRO DE TARJETAS OH</a></li>
                             <li><a  id="cotton">COTTON'S JEANS MEGAPLAZA</a></li>                        
-                        </ul>
-
-                    
+                        </ul>                
                 </div>
                 <div id="separador_proyectos2" class="proyectos"></div>
                 <div id="info_proyectos" class="proyectos"></div>
@@ -140,27 +139,25 @@
                     </ul>
                 </div>
             <div id="separador"></div>
-                <div id="info_contacto">
-                    
+                <div id="info_contacto">  
                 </div>
             </div>
-
 			<ul class="bxslider">
-			 <li><img src="img/slider/1.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/2.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/3.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/4.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/5.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/6.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/7.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/8.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/9.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/10.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/11.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/12.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/13.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/14.jpg" class="bannerPrincipal"></li>
-                <li><img src="img/slider/15.jpg" class="bannerPrincipal"></li>
+			    <li><a href="img/slider/1.jpg" data-lightbox="main" title="Imagen 1"><img src="img/slider/1.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/2.jpg" data-lightbox="main"><img src="img/slider/2.jpg" class="bannerPrincipal" ></a></li>
+                <li><a href="img/slider/3.jpg" data-lightbox="main"><img src="img/slider/3.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/4.jpg" data-lightbox="main"><img src="img/slider/4.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/5.jpg" data-lightbox="main"><img src="img/slider/5.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/6.jpg" data-lightbox="main"><img src="img/slider/6.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/7.jpg" data-lightbox="main"><img src="img/slider/7.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/8.jpg" data-lightbox="main"><img src="img/slider/8.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/9.jpg" data-lightbox="main"><img src="img/slider/9.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/10.jpg" data-lightbox="main"><img src="img/slider/10.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/11.jpg" data-lightbox="main"><img src="img/slider/11.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/12.jpg" data-lightbox="main"><img src="img/slider/12.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/13.jpg" data-lightbox="main"><img src="img/slider/13.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/14.jpg" data-lightbox="main"><img src="img/slider/14.jpg" class="bannerPrincipal"></a></li>
+                <li><a href="img/slider/15.jpg" data-lightbox="main"><img src="img/slider/15.jpg" class="bannerPrincipal"></a></li>
 			</ul>
          </div>
             <nav id="nav">
@@ -172,14 +169,9 @@
                 	<li id="contacto"><a id="contacto">CONTACTO</a></li>
                 </ul>
             </nav>
-	
 	<footer>
 		<span>&copy;2013BK ARQUITECTOS SAC.ALL RIGHTS RESERVED.LEGAL TERMS.PRIVACY POLICY</span>
 	</footer>
 </div>
-	<div id="sliderDos">
-		
-        </div>
-	</div>
 </body>
 </html>

@@ -310,7 +310,18 @@ a{
 	padding: 0.25em;
 	position: relative;
 	left: 90px;
-	top:0;		
+	top:7px;		
+	overflow: hidden;
+}
+#adjuntar .file{
+	cursor: pointer;
+	filter: alpha(opacity=0);
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	opacity: 0;
+	outline: 0;
+
 }
 #email2{
 	width: 220px;
@@ -348,6 +359,8 @@ a{
 	cursor: pointer;
 	left: 15.2em;
 	position: relative;
-	top:-2.2em;
-	
+	top:-2.2em;	
+}
+#mensaje{
+	resize:none;
 }

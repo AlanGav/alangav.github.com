@@ -56,17 +56,22 @@
 		</tr>
 
 	</table>
-	<button id="adjuntar">Adjuntar CV.</button>
+	<div id="adjuntar">
+		<input type="file" id="archivos" class="file" onchange="seleccionado()">
+		Adjuntar CV.
+	</div>
 	<button id="enviarEquipo">Enviar</button>
 	<button id="borrarEquipo">Borrar</button>
 </div>
 <div id="ubicanos" >
-	<img src="img/croquis/croquis.jpg" width=250>
+	<a href="img/croquis/croquis.jpg" data-lightbox="croquis">
+		<img src="img/croquis/croquis.jpg" width=250 title="Ubicación">
+	</a>
 	<div id="e" style="height:1px;width:250px;"></div>
 	<div>
 		<p style="font-size:12px;">AV.AREQUIPA 4130 OF.702,MIRAFLORES.</p>
 		<p style="font-size:12px;text-align:right;">TELF.:962357834/2214383</p>
-		<img src="img/lupa.png" width=37 id="lupa">
+		<a href="img/croquis/croquis.jpg" data-lightbox="croquisLupa"><img src="img/lupa.png" width=37 id="lupa"></a>
 	</div>
 	
 </div>

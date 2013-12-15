@@ -94,6 +94,17 @@ $(document).ready(function(){
 	//Al dar click en inicio se cierra cualquier flotante abierto
 	$("#inicio").on('click',function () {
 		$(".flotante").fadeOut(500)
+			$(".bxslider").html("")
+
+				for(variable = 1; variable<=15; variable++)
+					$(".bxslider").append("<li><a href=img/slider/"+variable+".jpg data-lightbox=main><img src=img/slider/"+variable+".jpg ></a></li>")
+				$(".bxslider").hide(0)
+			$('.bxslider').bxSlider({
+				  	auto:'true',
+				    speed:5000,
+				    mode:'fade'
+		  	});	
+		  	$(".bxslider").fadeIn(1000)
 	})
 	//Aparecer el flotante de nosotros y cambiar el texto respecto al click
 	$("#nosotros").on('click',function(){
@@ -145,8 +156,6 @@ $(document).ready(function(){
 								$(this).stop().fadeIn(500)
 							})
 						})	
-
-
 				}
 				else{
 					$(this).css('border-bottom','none')	
@@ -186,48 +195,55 @@ $("#servicios1").css('border-bottom','2px solid #fff')
 
 				}
 		})
-		
-
 	})
+	//cantidad de fotos por carpeta
+	bf = 13
+	cotton = 5
+	oh = 7
+$("#submenu_proyectos ul li a").on('click',function(){
+		carpeta = $(this).attr('id').toUpperCase()
+		if(carpeta == "BF"){
+			$(".bxslider").html("")
 
-	//Cargar slider aparte (pantalla negra)
-	altura = $("body").height()+100
-	$(".bannerPrincipal").on('click',function(){	
-		path = $(this).attr('src')
-		$("#sliderDos").fadeIn()
-		//path = $("#jsCarousel div img:first").attr('src')
-		$("#imgPrincipal").html("<img src="+path+" >")
-		$('.bx-prev').hide()
-		$('.bx-next').hide()
-			$("#sliderDos").css({
-				position:'absolute',
-				top:'0px',
-				background:'#000',
-				width:window.innerWidth+"px",
-				height:altura+"px",
-				"z-index":'200',
-				"margin-top":"3em"
-			})
+				for(variable = 0; variable<13; variable++)
+					$(".bxslider").append("<li><a href=img/Proyectos/BF/"+variable+".jpg data-lightbox=BF><img src=img/Proyectos/BF/"+variable+".jpg ></a></li>")
+				$(".bxslider").hide(0)
+			$('.bxslider').bxSlider({
+				  	auto:'true',
+				    speed:5000,
+				    mode:'fade'
+		  	});	
+		  	$(".bxslider").fadeIn(1000)
+		}
+		else if(carpeta=="OH"){
+			$(".bxslider").html("")
 			
-			$("#cerrar").click(function(){
-				$("#sliderDos").fadeOut()
-				$('.bx-prev').show()
-				$('.bx-next').show()
-			})
-	})
+				for(variable = 0; variable<7; variable++)
+					$(".bxslider").append("<li><a href=img/Proyectos/OH/"+variable+".jpg data-lightbox=OH><img src=img/Proyectos/OH/"+variable+".jpg ></a></li>")
+				$(".bxslider").hide(0)
 
-	$("#cerrar").css({
-		position:'absolute',
-		left:$("#slider").position.left+100+"px"
-	})
-
-	//Hacer img grande del thumb
-	$("#jsCarousel div img").on('click',function(){
-		ruta = $(this).attr('src')
-		$("#imgPrincipal").html("<img src="+ruta+">").hide(0,function(){
-			$(this).fadeIn(500)
-		})
-	})
+			$('.bxslider').bxSlider({
+				  	auto:'true',
+				    speed:5000,
+				    mode:'fade'
+		  	});	
+		  	$(".bxslider").fadeIn(1000)
+		}
+		else if(carpeta=="COTTON"){
+			$(".bxslider").html("")
 	
-		
+				for(variable = 0; variable<5; variable++)
+					$(".bxslider").append("<li><a href=img/Proyectos/"+carpeta+"/"+variable+".jpg data-lightbox=COTTON><img src=img/Proyectos/"+carpeta+"/"+variable+".jpg ></a></li>")
+				$(".bxslider").hide(0)
+			
+			$('.bxslider').bxSlider({
+				  	auto:'true',
+				    speed:5000,
+				    mode:'fade'
+		  	});	
+		  	$(".bxslider").fadeIn(1000)
+		}
+
+	})
 })
+
