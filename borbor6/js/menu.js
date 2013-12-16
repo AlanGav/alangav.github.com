@@ -206,7 +206,7 @@ $("#submenu_proyectos ul li a").on('click',function(){
 			$(".bxslider").html("")
 
 				for(variable = 0; variable<13; variable++)
-					$(".bxslider").append("<li><a href=img/Proyectos/BF/"+variable+".jpg data-lightbox=BF><img src=img/Proyectos/BF/"+variable+".jpg ></a></li>")
+					$(".bxslider").append("<li><a href=img/proyectos/BF/"+variable+".jpg data-lightbox=BF><img src=img/Proyectos/BF/"+variable+".jpg ></a></li>")
 				$(".bxslider").hide(0)
 			$('.bxslider').bxSlider({
 				  	auto:'true',
@@ -219,7 +219,7 @@ $("#submenu_proyectos ul li a").on('click',function(){
 			$(".bxslider").html("")
 			
 				for(variable = 0; variable<7; variable++)
-					$(".bxslider").append("<li><a href=img/Proyectos/OH/"+variable+".jpg data-lightbox=OH><img src=img/Proyectos/OH/"+variable+".jpg ></a></li>")
+					$(".bxslider").append("<li><a href=img/proyectos/OH/"+variable+".jpg data-lightbox=OH><img src=img/Proyectos/OH/"+variable+".jpg ></a></li>")
 				$(".bxslider").hide(0)
 
 			$('.bxslider').bxSlider({
@@ -233,7 +233,7 @@ $("#submenu_proyectos ul li a").on('click',function(){
 			$(".bxslider").html("")
 	
 				for(variable = 0; variable<5; variable++)
-					$(".bxslider").append("<li><a href=img/Proyectos/"+carpeta+"/"+variable+".jpg data-lightbox=COTTON><img src=img/Proyectos/"+carpeta+"/"+variable+".jpg ></a></li>")
+					$(".bxslider").append("<li><a href=img/proyectos/"+carpeta+"/"+variable+".jpg data-lightbox=COTTON><img src=img/Proyectos/"+carpeta+"/"+variable+".jpg ></a></li>")
 				$(".bxslider").hide(0)
 			
 			$('.bxslider').bxSlider({
