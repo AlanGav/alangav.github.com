@@ -1,0 +1,366 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: 'Cubos';
+	src:url('Cubos.ttf');
+}
+body{
+	background: #000;
+	font-family: 'Candara';
+	font-size: 14px;
+}
+#wrapper{
+	margin: auto;
+	margin-top: 3%;
+	width: 960px;
+}
+.header{
+	color:#fff;
+	display: inline-block;
+	margin-bottom: 2%;
+	width: 32%;
+	vertical-align: top;
+}
+.header a{
+	color:#ddd;
+	text-decoration: none;
+}
+#direccion{
+	color:#ddd;
+	font-size: 12px;
+	margin-right: 4em;
+	padding:1em 0em 0em 0em;
+	text-align: right;
+}
+#direccion p{
+	margin-left:2em;
+}
+#logo{
+	text-align: center;
+	border-left: 1px solid #333;
+	border-right:1px solid #333;
+	width: 25%;
+}
+#bk{
+font-family: 'Cubos';
+font-weight: bold;
+font-size: 80px;
+text-shadow:2px 0px 2px #000;
+}
+#arquitectos{
+	font-family: 'Cubos';
+	position: relative;
+	bottom: 1em;
+}
+#social{
+	margin-top: 2em;
+	padding-left: 2.3em;
+	text-align: left;
+}
+#social a{
+	margin-right: 1em;
+	margin-left: 0.25em;
+}
+nav ul{
+	list-style:none;
+	margin-top: 3em;
+	}
+nav ul li a{
+	padding: 0.5em;
+	color:#ddd;
+	font-family:'Cubos';
+	text-decoration:none;	
+	}
+nav ul li{
+	display:inline-block;
+	font-size:16px;
+	text-align:center;
+	padding: 0.1em;
+	width:19%;
+	}
+.linea{
+	border-right:1px solid #333;
+}
+footer{
+	margin-top: 4%;
+	margin-bottom: 4%;
+	text-align: center;
+}
+footer span{
+	color:#ddd;
+	font-size: 11px;
+	margin-top:1em; 
+}
+#nosotros_flotante,#proyectos_flotante{
+	color: #fff;
+	background: -webkit-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3));
+	background: -moz-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3));
+	background: -ms-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3));
+	margin-top: 50px;
+	overflow: auto;
+}
+#clientes_flotante,#contacto_flotante{
+	color: #fff;
+	background: -webkit-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3));
+	background: -moz-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3));
+	background: -ms-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3));
+	padding:1em;
+	margin-top: 30px;	
+}
+#menu_flotante{
+	display: inline-block;
+	margin:1em 1em;
+	margin-right: 2em;
+	width: 30%;
+}
+#menu_flotante ul{
+	list-style: none;
+}
+#menu_flotante ul li a{
+	color:#fff;
+	text-decoration: none;
+}
+#menu_flotante ul li{
+	margin-bottom: 0.5em;
+	text-align: left;
+}
+#info_flotante{
+	display: inline-block;
+	margin-top: 1em;
+	padding:0.5em;
+	vertical-align: top;
+	width: 50%;
+}
+#info_flotante div p{
+	font-size: 13px;
+}
+#separador{
+	background: -webkit-linear-gradient(#ccc,rgba(0,0,0,0.1));
+	background: -moz-linear-gradient(#ccc,rgba(0,0,0,0.1));
+	background: -ms-linear-gradient(#ccc,rgba(0,0,0,0.1));
+	display: inline-block;
+	height: 250px;
+	margin-top: 1em;
+	margin-right: 0.5em;
+	width: 1px;
+	vertical-align: top;
+	
+}
+#imgPrincipal{
+	margin: auto;
+	max-width: 700px;
+	max-height: 492px;
+}
+#imgPrincipal img{
+	width: 100%;
+	max-height: 492px;
+}
+#cerrar{
+	cursor: pointer;
+	margin-left: 1200px;
+}
+.slider{
+
+
+}
+/*PROYECTOS*/
+
+#menu_proyectos{
+	width: 20%;
+}
+ul{
+	list-style: none;
+}
+#menu_proyectos ul li a{
+	color: #fff;
+}
+#menu_proyectos ul li{
+	margin-bottom: 0.5em;
+}
+a{
+	text-decoration: none;
+}
+#separador_proyectos,#separador_proyectos2{
+	background: -webkit-linear-gradient(#ccc,rgba(0,0,0,0.1));
+	background: -moz-linear-gradient(#ccc,rgba(0,0,0,0.1));
+	background: -ms-linear-gradient(#ccc,rgba(0,0,0,0.1));
+	display: inline-block;
+	height: 250px;
+	margin-top: 1em;
+	width: 1px;
+	vertical-align: top;
+}
+#submenu_proyectos{
+	padding: 0.25em;
+	margin-right: 2em;
+	width: 39%;
+}
+#submenu_proyectos ul  li a{
+	color: #fff;
+}
+#submenu_proyectos ul  li{
+	margin-bottom: 0.5em;
+}
+#info_proyectos{
+	display: inline-block;
+	font-size: 13px;
+	padding:0.5em;
+	width: 30%;
+	vertical-align: top;
+	
+}
+.proyectos{
+	display: inline-block;
+	vertical-align: top;
+}
+#proyectos_flotante{
+	padding: 0.75em;	
+}
+#proyectos_flotante div{
+	margin-top: 0.25em;
+}
+#menu_clientes ul li ,#menu_contacto ul li{
+	margin-bottom: 0.5em;
+}
+#menu_clientes ul li a,#menu_contacto ul li a{
+	color:#fff;
+}
+#clientes_flotante div,#contacto_flotante div
+{
+	display: inline-block;
+}
+#menu_clientes{
+	margin-top: 0.25em;
+	padding-right: 8em;
+}
+#info_clientes{
+	vertical-align: top;
+}
+#info_clientes img{
+	width: 150px;
+	margin: auto;
+	margin-top: 2em;
+	margin-left: 1em;
+}
+#menu_contacto{
+	margin-top: 0.25em;
+	padding-right: 2em;
+	width: 24%;
+}
+#contacto_flotante #separador{
+	margin-top: 0.25em;
+}
+#servicios label{
+float: left;
+clear: both;
+}
+#info_contacto{
+	width: 50%;
+	vertical-align: top;
+}
+#lblMensaje{
+	position: relative;
+	bottom: 3em;
+}
+a{
+	cursor: pointer;
+}
+#enviar{
+	background: #aaa5a5;
+	border:none;
+	color:#fff;
+	cursor: pointer;
+	padding: 0.25em;
+	position: relative;
+	left: 140px;
+	top:260px;
+}
+#borrar{
+	background: #aaa5a5;
+	border:none;
+	color:#fff;
+	cursor: pointer;
+	padding: 0.25em;
+	position: relative;
+	left: 160px;
+	top:260px;	
+}
+#servicios table,#equipo table{
+	margin-left: 0.5em;
+}
+#nombres{
+	width: 160px;
+}
+#apellidos{
+	width: 160px;	
+}
+#email{
+	width: 182px;
+}
+#equipo{
+	margin-top: 1.7em;
+}
+#adjuntar{
+	background: #aaa5a5;
+	border:none;
+	cursor: pointer;
+	color:#fff;
+	padding: 0.25em;
+	position: relative;
+	left: 90px;
+	top:7px;		
+	overflow: hidden;
+}
+#adjuntar .file{
+	cursor: pointer;
+	filter: alpha(opacity=0);
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	opacity: 0;
+	outline: 0;
+
+}
+#email2{
+	width: 220px;
+}
+#enviarEquipo{
+	background: #aaa5a5;
+	cursor: pointer;
+	border:none;
+	color:#fff;
+	padding: 0.25em;
+	position: relative;
+	left: 100px;
+	top:0;		
+}
+#borrarEquipo{
+	background: #aaa5a5;
+	cursor: pointer;
+	border:none;
+	color:#fff;
+	padding: 0.25em;
+	position: relative;
+	left: 110px;
+	top:0;		
+}
+#e{
+	background: -webkit-linear-gradient(#ccc,rgba(0,0,0,0.1));
+	background: -moz-linear-gradient(#000,rgba(255,255,255,1));
+	background: -ms-linear-gradient(#ccc,rgba(0,0,0,0.1));	
+}
+#info_contacto #ubicanos{
+	margin-left: 3em;
+	margin-top: 2em;
+}
+#lupa{
+	cursor: pointer;
+	left: 15.2em;
+	position: relative;
+	top:-2.2em;	
+}
+#mensaje{
+	resize:none;
+}
