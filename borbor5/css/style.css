@@ -1,0 +1,66 @@
+*{
+	margin:0;
+	padding: 0;
+}
+@font-face{
+	font-family: 'Cubos';
+	src:url('Cubos.ttf');
+}
+/*eleccion de idioma*/
+body{
+	background: url('../img/b3.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Cubos';
+	font-size: 16px;
+}
+#wrapper{
+	width: 960px;
+	margin: auto;
+	margin-top: 15%;
+}
+#content{
+	margin:auto;
+	text-align: center;
+	border-left: 2px solid #aaa;
+	border-right: 2px solid #aaa;
+
+}
+#progressbar{
+	width: 200px;
+	height: 20px;
+	margin:20px 40px;
+}
+#bk{
+font-weight: bold;
+font-size: 80px;
+text-shadow:2px 0px 2px #000;
+}
+#arquitectos{
+font-size: 18px;
+text-shadow:4px 0px 10px #000;	
+}
+.intro{
+	vertical-align: middle;
+	display:inline-block;
+	text-align: center;
+	width: 30%;
+}
+
+#englishContent,#spanishContent{
+	font-weight: bold;
+	font-size: 30px;
+	text-shadow:2px 0px 8px #000;
+}
+#porcentaje{
+	font-size: 25px;
+	text-shadow:4px 0px 10px #000;		
+}
+#efecto_desliz{
+	width: 50%;
+	margin-left: 75px;
+	border-bottom: 5px solid #000;
+}
+#spanish,#english{
+	cursor: pointer;
+}
