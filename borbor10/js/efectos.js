@@ -19,7 +19,7 @@ $(document).ready(function(){
 			dummyload();	
 			}
 			else{
-				document.location.href="inicio.html"
+				$(location).attr('href','alangav.github.io/borbor10/inicio.html')
 			}
 
 		};
