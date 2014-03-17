@@ -62,6 +62,15 @@ body{
 	padding: 10px 20px;
 	text-align: center;
 }
+#skype{
+	top:0px;
+	left: 5px;
+	position: absolute;
+
+}
+#skype img{
+	width: 75%;
+}
 .top-nav ul li{
 	display:block;
 }
@@ -77,8 +86,11 @@ body{
 	text-transform: uppercase;
 	font-size: 0.875em;
 }
-.top-nav li.active> a, .top-nav li> a:hover {
-	
+.top-nav li> a:hover {
+	-webkit-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-ms-transition:all 0.5s linear;
 	background: url(../images/icon2.png) no-repeat 100% 60% #349840;
 }
 .top-search input[type="text"]{
@@ -101,9 +113,10 @@ body{
 }
 .main-header {
 }
+
 .info img.img-info{
 	display: inline-block;
-	width: 48%;
+	width: 100%;
 	height: 100px;
 }
 .info p{
@@ -114,7 +127,7 @@ body{
 	display: inline-block;
 	height: 80px;
 	margin-top: 0.5em;
-	width: 31.5%;
+	width: 100%;
 }
 .info img.mainImage{
 	width: 100%;
@@ -205,6 +218,7 @@ input[type="checkbox"]{
 	margin-top: 2px;
 }
 .content {
+	padding: 1em;
 	margin: 0 12px;
 }
 /*---start-mid-grid----*/
@@ -365,7 +379,7 @@ input[type="checkbox"]{
 .footer{
 	color:#FFF;
 	padding: 0.5em 0;
-	background: rgba(52,152,64,0.75);
+	background: rgba(52,152,64,1);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 0.875em;
 	text-align: center;
@@ -777,10 +791,10 @@ input[type="checkbox"]{
 	display: block;
 }
 .contact-form input[type="submit"]:hover{
-	background: url(../images/icon1h.png) no-repeat 100% -0% #EC3000;
+	
 }
 .contact-form input[type="submit"]:active{
-	background: url(../images/icon1h.png) no-repeat 100% -0% #EC3000;
+	
 }
 .company_address{
 }
@@ -802,4 +816,28 @@ input[type="checkbox"]{
 .contact-footer{
 	border-top: 1px solid rgba(69, 69, 69, 0.13);
 	padding: 28px 0px 0px 0px;
+}
+.info a,.info a:hover{
+	background: none;
+	display: inline-block;
+	padding: 0;
+	width: 48%;
+}
+.info a.grid-2{
+	width: 31.5%;
+}
+.info a.piscina,a.piscinaPrincipal,a.piscinaPrincipal:hover{
+	width: 100%;
+}
+.slider{
+	width: 80%;
+	margin: auto;
+	margin-top: 1em;
+}
+.ubicacion{
+	margin-top: 1em;
+	text-align: center;
+}
+.ubicacion iframe{
+	max-width: 100%;
 }
